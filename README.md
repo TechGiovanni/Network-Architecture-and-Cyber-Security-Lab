@@ -35,7 +35,7 @@ https://techgiovanni1.imgur.com/all
 
 <h2>## Steps</h2>
 <p align="center">
-<img src="https://i.imgur.com/QisFJTX.png"/>
+<img src="https://imgur.com/YG35zKE"/>
 <p>Ref 1: Network Diagram</p>
 </p>
 <p>The Final Network Architecture including (Security Operations Center, Attack Network, System Administration, Virtual Private Networks, Office & Corporate Envrironments, and the intermediary devices CIsco Router & switches and Windows Routing)</p>
