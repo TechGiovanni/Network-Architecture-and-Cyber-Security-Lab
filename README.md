@@ -14,13 +14,13 @@ This hands-on experience was designed to deepen understanding of network securit
 - Proficient with cisco IOS to configure Routers and Switches
 
 ### Tools Used
-- Security Information and Event Management (SIEM) system log ingestion and analysis.
+- (Snort, Suricata, PfBlockNG) Security Information and Event Management (SIEM) system log ingestion, Analysis and Blocking Malicious IPs.
 - Network analysis tools (Wireshark, Advanced IP Scanner) for capturing and examining network traffic.
-- Network Documentation (Packet Tracer)
+- Network Documentation (Packet Tracer, GitHub)
 - Firewall tool (Pfsense) for protecting the network.
 - Cisco Router (csr1000v) for routing packets
 - Windows 11 Ent Client for client machines
-- Windows 2016 Core Server for issuing IP, dns and WINS configurations to client machines
+- Windows 2016 Core Server for DHCP, DNS and WINS IP configurations to client machines as well as Windows Server as a Router
 - Windows 2016 GUI Server for managing the network (Router, Firewalls, and computers)
 
 ### Features
