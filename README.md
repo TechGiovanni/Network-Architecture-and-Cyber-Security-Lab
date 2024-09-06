@@ -125,6 +125,9 @@ https://techgiovanni1.imgur.com/all
 
 ### Setup LANR1-4-6 (Windows Core Server as a LAN Router)
 <p align="center">
+  <p>sconfig</p>
+  <p>Change the Computer Name</p>
+  <p>Update the timezone if necessary</p>
   <img src="https://i.imgur.com/wtbEs0G.png"/>
   <p>Ref 23: Allow Remote Management and update the IP Adrdesses of Each INterface</p>
   <ul>
@@ -148,7 +151,6 @@ https://techgiovanni1.imgur.com/all
     <li>new-netipaddress -InterfaceAlias LAN6 -Ipaddress 192.168.6.254 -PrefixLength 24</li>
   </ul>
 
-
   <img src="https://i.imgur.com/uctHQJe.png"/>
   <img src="https://i.imgur.com/uctHQJe.png"/>
   <p>Ref 24: Set a default route for unknown destinations</p>
@@ -157,12 +159,36 @@ https://techgiovanni1.imgur.com/all
     <li>netsh interface ipv4 add route 0.0.0.0/0 "LAN1" 192.168.4.254</li> <p>Set default route</p>
      <li>netsh interface ipv4 add route 0.0.0.0/0 "LAN6" 192.168.4.254</li> <p>Set default route</p>
     <li>route print</li> <p>Verify that the default route has been set correctly </p>
-  </ul>
-  
-  <p>sconfig</p>
-  <p>Change the Computer Name</p>
-  <p>Update the timezone if necessary</p>
-  
+  </ul> 
+  <p>Disable IP Version 6 on the Interfaces</p>
+   <ul>
+    <li>disable-NetAdapterBinding -Name LAN1 -ComponentID ms_tcpip6</li>
+    <li>disable-NetAdapterBinding -Name LAN4 -ComponentID ms_tcpip6</li>
+     <li>disable-NetAdapterBinding -Name LAN6 -ComponentID ms_tcpip6</li>
+    <li>route print</li> <p>Verify that the default route has been set correctly </p>
+  </ul> 
+</p>
+
+### Install The Router on the LANR1-4-6
+<p align="center">
+<img src="https://i.imgur.com/3KStiYR.png"/>
+  <p>Ref 25: Add roles and Features to setup this Core server as a router</p>
+<img src="https://i.imgur.com/UuF8qJ6.png"/>
+<p>Ref 26: Choose Routing</p>
+<img src="https://i.imgur.com/KhHxexz.png"/>
+<p>Ref 27: Add REmote amangeemnt tools to the WDS01 Management and Devployment Server</p>
+<img src="https://i.imgur.com/eAah4hk.png"/>
+<p>Ref 28: Setup routing on the LANR1-4-6 Server. Custom Configuration and then LAN routing</p>
+<img src="https://i.imgur.com/fDBw9wb.png"/>
+<p>Ref 29: Setup Routing using Static routes, So packets can get through the router and onto the other side</p>
+<img src=""/>
+<p>Ref 28: </p>
+<img src=""/>
+<p>Ref 28: </p>
+<img src=""/>
+<p>Ref 28: </p>
+<img src=""/>
+<p>Ref 28: </p>
 </p>
 
 ### Install Snort - An Intrusion detection system (IDS) and Intrusion Prevention System (IPS)
@@ -175,8 +201,6 @@ https://techgiovanni1.imgur.com/all
 <p></p>
 <p></p>
 <p></p>
-
-
 
 
 
