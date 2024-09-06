@@ -38,14 +38,16 @@ https://techgiovanni1.imgur.com/all
 <img src="https://i.imgur.com/IMgwPno.png"/>
 <p>Ref 1: Network Diagram</p>
 </p>
-<p>The Final Network Architecture including (Security Operations Center, Attack Network, System Administration, Virtual Private Networks, Office & Corporate Envrironments, and the intermediary devices CIsco Router & switches and Windows Routing)</p>
+<p>The Final Network Architecture including (Security Operations Center, Attack Network, System Administration, Virtual Private Networks, Office & Corporate Envrironments, and the Intermediary Devices Cisco Router Csr1000v and Windows Routing)</p>
 
 
-
-<!-- - ### [YouTube: Installing an Active Directory](https://youtu.be/tTI7z6XsQfU) -->
-- ### [Notion: I've Included Documentation of the whole process](https://quill-lunge-517.notion.site/DNS-and-DHCP-e5bd0073a79f4ff78cd3732d5efd22fd?pvs=4)
-
-<h2>Environments and Technologies Used</h2>
+<h2>Using the VPN Server on LAN 4 to setup Pfsense-FW3 that is directly connected to the internet</h2>
+<h2>## Setup Pfsense to get Internet Access on the Internal LAN</h2>
+<p align="center">
+<img src="https://i.imgur.com/DlwV84Y.png"/>
+<p>Ref 2: Pfsense Firewall IP address setup</p>
+</p>
+<p>This allows up to get access to the pPfsense web interface. Our VPN server is directly connected to LAN 4, as well as the LAN interface of the Pfsense-FW3 LAN interface. The WAN interface is automatically getting a IP Address from the Internet Srevice Provider and using NAT to translate internal addresses into a single address for connected out onto the internet.</p>
 
 - 
 
