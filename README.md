@@ -33,7 +33,7 @@ This hands-on experience was designed to deepen understanding of network securit
 ### Resources
 https://techgiovanni1.imgur.com/all
 
-<h2>## Steps</h2>
+## Steps
 <p align="center">
 <img src="https://i.imgur.com/IMgwPno.png"/>
 <p>Ref 1: Network Diagram</p>
@@ -41,16 +41,80 @@ https://techgiovanni1.imgur.com/all
 <p>The Final Network Architecture including (Security Operations Center, Attack Network, System Administration, Virtual Private Networks, Office & Corporate Envrironments, and the Intermediary Devices Cisco Router Csr1000v and Windows Routing)</p>
 
 
-<h2>Using the VPN Server on LAN 4 to setup Pfsense-FW3 that is directly connected to the internet</h2>
-<h2>Setup Pfsense to get Internet Access on the Internal LAN</h2>
+### Setup Pfsense-FW3 to get Internet Access on the Internal LAN
 <p align="center">
 <img src="https://i.imgur.com/DlwV84Y.png"/>
 <p>Ref 2: Pfsense Firewall IP address setup</p>
 </p>
-<p>This allows up to get access to the pPfsense web interface. Our VPN server is directly connected to LAN 4, as well as the LAN interface of the Pfsense-FW3 LAN interface. The WAN interface is automatically getting a IP Address from the Internet Srevice Provider and using NAT to translate internal addresses into a single address for connected out onto the internet.</p>
+<p>This allows up to get access to the Pfsense web interface to further do firewall configurations, rules and download packages.</p> 
+<p>Our VPN server is directly connected to LAN 4, as well as the LAN interface side of the Pfsense-FW3. The WAN interface side of the Pfsense-FW3 is automatically getting a IP Address from the Internet Service Provider and using NAT to translate internal IP addresses into a single address for connecting out onto the internet.</p>
 
 - 
 
-<h2>Operating Systems Used </h2>
+### Pfsense-FW3 Initial Configurations Web Interface
+<p align="center">
+<img src="https://i.imgur.com/U5yhbFY.png"/>
+<p>Ref 3: Setting DNS, and Domain</p> 
+<img src="https://i.imgur.com/NBdm7o1.png"/>
+<p>Ref 4: Setting the Timezone of my corrent location</p>
+<img src="https://i.imgur.com/R5UVnDa.png"/>
+<p>Ref 5: Updating Pfsense to its latest version to mitigate the risk of a vulnerability in the software</p>
+<img src="https://i.imgur.com/Jnlm3c0.png"/>
+<p>Ref 6: Change the default PFsense web interface to use HTTPS instead of HTTP</p>
+</p>
+
+- 
+
+### Pfsense-FW3 Setting up TCP & UDP Aliases and Firewall Rules to be able to access the internet on the LAN interface
+<p align="center">
+<img src="https://i.imgur.com/j6KCKA0.png"/>
+<img src="https://i.imgur.com/cHjPxcT.png"/>
+<p>Ref 7: Creating a group of Ports called an Alias to use for convenience instead of having single Port rules.</p>
+<img src="https://i.imgur.com/Kc23syW.png"/>
+<img src="https://i.imgur.com/kjbqntR.png"/>
+<p>Ref 8: Using the Aliases in a firewall Rule to Allow Traffic on these ports</p>
+<img src="https://i.imgur.com/BtdBC6y.png"/>
+<p>Ref 9: Creating a Rule to Allow ICMP Traffic (Echo Request, Echo Reply, Destination Unreachable, Time Exceeded and Parameter Problem on the LAN Interface </p>
+<img src="https://i.imgur.com/4wFJqW9.png"/>
+<p>Ref 10: Setting a Rule to Reject ANY traffic that is not on the Allow Rules</p>
+</p>
+
+
+### Title
+<p align="center">
+<img src=""/>
+<img src=""/>
+<img src=""/>
+<img src=""/>
+<p>Ref 2: </p>
+</p>
+<p></p>
+<p></p>
+<p></p>
+
+
+### Title
+<p align="center">
+<img src=""/>
+<img src=""/>
+<img src=""/>
+<img src=""/>
+<p>Ref 2: </p>
+</p>
+<p></p>
+<p></p>
+<p></p>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
