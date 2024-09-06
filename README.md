@@ -42,7 +42,7 @@ https://techgiovanni1.imgur.com/all
 
 
 <h2>Using the VPN Server on LAN 4 to setup Pfsense-FW3 that is directly connected to the internet</h2>
-<h2>## Setup Pfsense to get Internet Access on the Internal LAN</h2>
+<h2>Setup Pfsense to get Internet Access on the Internal LAN</h2>
 <p align="center">
 <img src="https://i.imgur.com/DlwV84Y.png"/>
 <p>Ref 2: Pfsense Firewall IP address setup</p>
