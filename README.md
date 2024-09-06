@@ -41,7 +41,7 @@ https://techgiovanni1.imgur.com/all
 <p>The Final Network Architecture including (Security Operations Center, Attack Network, System Administration, Virtual Private Networks, Office & Corporate Envrironments, and the Intermediary Devices Cisco Router Csr1000v and Windows Routing)</p>
 
 
-### Configuring the VPN IP Address
+### Configuring the VPN Server IP Address on LAN 4
 <p align="center">
 <img src="https://i.imgur.com/vVH1zwR.png"/>
 <p>Ref 13: Windows VPN just to setup PFsense-FW3</p>
@@ -87,13 +87,22 @@ https://techgiovanni1.imgur.com/all
 <p>Ref 12: Reject ANY traffic that is not on the Allow Rules</p></p>
 
 
-
-
-
-
-### Title
+### Install PFBlockerNG - 
 <p align="center">
+<img src="https://i.imgur.com/SlOIRHd.png"/>
 <img src=""/>
+<img src=""/>
+<img src=""/>
+<p>Ref 2: </p>
+</p>
+<p>PFBlocker assigns many Ip Address Url lists such as IBlock Lists into a single Alias and choosing a Rule action to block Counrties and IP Block list Ranges. </p>
+<p>It aggregates several IP and DNS block lists into a single Alias that can be checked. </p>
+<p>This Stops traffic before the DNS Name resolution is even complete. Reducing the processing.</p>
+
+
+### Install Snort - An Intrusion detection system (IDS) and Intrusion Prevention System (IPS)
+<p align="center">
+<img src="https://i.imgur.com/SlOIRHd.png"/>
 <img src=""/>
 <img src=""/>
 <img src=""/>
@@ -105,6 +114,18 @@ https://techgiovanni1.imgur.com/all
 
 
 
+
+### Install Snort - An Intrusion detection system (IDS) and Intrusion Prevention System (IPS)
+<p align="center">
+<img src="https://i.imgur.com/SlOIRHd.png"/>
+<img src=""/>
+<img src=""/>
+<img src=""/>
+<p>Ref 2: </p>
+</p>
+<p></p>
+<p></p>
+<p></p>
 
 
 
