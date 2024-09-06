@@ -123,17 +123,35 @@ https://techgiovanni1.imgur.com/all
 
 
 
-### Install Snort - An Intrusion detection system (IDS) and Intrusion Prevention System (IPS)
+### Setup LANR1-4-6 (Windows Core Server as a LAN Router)
 <p align="center">
-<img src=""/>
-<img src=""/>
-<img src=""/>
-<p>Ref 2: </p>
-</p>
-<p></p>
-<p></p>
-<p></p>
+  <img src="https://i.imgur.com/wtbEs0G.png"/>
+  <p>Ref 23: Allow Remote Management and update the IP Adrdesses of Each INterface</p>
+  <ul>
+    <li>winrm Quickconfig</li>
+    <li>set-netfirewallrule -Profile Public,Private,Domain -DisplayGroup "Windows Remote Management" -Enabled True</li>
+  </ul>
+  
+  <img src="https://i.imgur.com/rQxMlxQ.png"/>
+  <img src="https://i.imgur.com/d5mP42q.png"/>
+  <p>Ref 24: Rename Net Adapter Name</p>
+   <ul>
+    <li>rename-Netadapter -name "Ethernet 2" -newname "LAN1"</li>
+    <li>rename-Netadapter -name "Ethernet" -newname "LAN4"</li>
+    <li>rename-Netadapter -name "Ethernet 3" -newname "LAN6"</li>
+  </ul>
 
+  <p>Set the IP Addresses for Each LAN Interface: </p>
+  <ul>
+    <li>new-netipaddress -InterfaceAlias LAN1 -Ipaddress 192.168.1.254 -PrefixLength 24</li>
+    <li>new-netipaddress -InterfaceAlias LAN4 -Ipaddress 192.168.4.253 -PrefixLength 24 -DefaultGateway 192.168.4.254</li>
+    <li>new-netipaddress -InterfaceAlias LAN6 -Ipaddress 192.168.6.254 -PrefixLength 24</li>
+  </ul>
+
+  <p>sconfig</p>
+  <p>Change the Computer Name</p>
+  <p>Update the timezone if necessary</p>
+</p>
 
 ### Install Snort - An Intrusion detection system (IDS) and Intrusion Prevention System (IPS)
 <p align="center">
