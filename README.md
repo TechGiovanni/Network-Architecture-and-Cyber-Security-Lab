@@ -148,9 +148,21 @@ https://techgiovanni1.imgur.com/all
     <li>new-netipaddress -InterfaceAlias LAN6 -Ipaddress 192.168.6.254 -PrefixLength 24</li>
   </ul>
 
+  <img src="https://i.imgur.com/rQxMlxQ.png"/>
+  <img src="https://i.imgur.com/uctHQJe.png"/>
+  <img src="https://i.imgur.com/uctHQJe.png"/>
+  <p>Ref 24: Set a default route for unknown destinations</p>
+   <ul>
+    <li>netsh interface ipv4 show interfaces</li> <p>Shows the Name and index </p>
+    <li>netsh interface ipv4 add route 0.0.0.0/0 "LAN1" 192.168.4.254</li> <p>Set default route</p>
+     <li>netsh interface ipv4 add route 0.0.0.0/0 "LAN6" 192.168.4.254</li> <p>Set default route</p>
+    <li>route print</li> <p>Verify that the default route has been set correctly </p>
+  </ul>
+  
   <p>sconfig</p>
   <p>Change the Computer Name</p>
   <p>Update the timezone if necessary</p>
+  
 </p>
 
 ### Install Snort - An Intrusion detection system (IDS) and Intrusion Prevention System (IPS)
