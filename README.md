@@ -141,14 +141,14 @@ https://techgiovanni1.imgur.com/all
     <li>rename-Netadapter -name "Ethernet 3" -newname "LAN6"</li>
   </ul>
 
-  <p>Set the IP Addresses for Each LAN Interface: </p>
+  <p>And then Set the IP Addresses for Each LAN Interface: </p>
   <ul>
     <li>new-netipaddress -InterfaceAlias LAN1 -Ipaddress 192.168.1.254 -PrefixLength 24</li>
     <li>new-netipaddress -InterfaceAlias LAN4 -Ipaddress 192.168.4.253 -PrefixLength 24 -DefaultGateway 192.168.4.254</li>
     <li>new-netipaddress -InterfaceAlias LAN6 -Ipaddress 192.168.6.254 -PrefixLength 24</li>
   </ul>
 
-  <img src="https://i.imgur.com/rQxMlxQ.png"/>
+
   <img src="https://i.imgur.com/uctHQJe.png"/>
   <img src="https://i.imgur.com/uctHQJe.png"/>
   <p>Ref 24: Set a default route for unknown destinations</p>
