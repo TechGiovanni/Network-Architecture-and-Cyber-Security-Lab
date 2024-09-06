@@ -56,9 +56,9 @@ https://techgiovanni1.imgur.com/all
 <img src="https://i.imgur.com/U5yhbFY.png"/>
 <p>Ref 3: Setting DNS, and Domain</p> 
 <img src="https://i.imgur.com/NBdm7o1.png"/>
-<p>Ref 4: Setting the Timezone of my corrent location</p>
+<p>Ref 4: Setting the Timezone for my current location</p>
 <img src="https://i.imgur.com/R5UVnDa.png"/>
-<p>Ref 5: Updating Pfsense to its latest version to mitigate the risk of a vulnerability in the software</p>
+<p>Ref 5: Updating Pfsense to its latest version to mitigate vulnerability in the software</p>
 <img src="https://i.imgur.com/Jnlm3c0.png"/>
 <p>Ref 6: Change the default PFsense web interface to use HTTPS instead of HTTP</p>
 </p>
@@ -68,15 +68,17 @@ https://techgiovanni1.imgur.com/all
 ### Pfsense-FW3 Setting up TCP & UDP Aliases and Firewall Rules to be able to access the internet on the LAN interface
 <p align="center">
 <img src="https://i.imgur.com/j6KCKA0.png"/>
+<p>Ref 7: Creating a TCP group of Ports called an Alias to use for convenience instead of having single Port rules.</p>
 <img src="https://i.imgur.com/cHjPxcT.png"/>
-<p>Ref 7: Creating a group of Ports called an Alias to use for convenience instead of having single Port rules.</p>
+<p>Ref 8: Creating a UDP group of Ports called an Alias to use for convenience instead of having single Port rules.</p>
 <img src="https://i.imgur.com/Kc23syW.png"/>
+<p>Ref 9: Using the Aliases in a firewall Rule to Allow Traffic on these ports</p>
 <img src="https://i.imgur.com/kjbqntR.png"/>
-<p>Ref 8: Using the Aliases in a firewall Rule to Allow Traffic on these ports</p>
+<p>Ref 10: Using the Aliases in a firewall Rule to Allow Traffic on these ports</p>
 <img src="https://i.imgur.com/BtdBC6y.png"/>
-<p>Ref 9: Creating a Rule to Allow ICMP Traffic (Echo Request, Echo Reply, Destination Unreachable, Time Exceeded and Parameter Problem on the LAN Interface </p>
+<p>Ref 11: Creating a Rule to Allow ICMP Traffic (Echo Request, Echo Reply, Destination Unreachable, Time Exceeded and Parameter Problem on the LAN Interface </p>
 <img src="https://i.imgur.com/4wFJqW9.png"/>
-<p>Ref 10: Setting a Rule to Reject ANY traffic that is not on the Allow Rules</p>
+<p>Ref 12: Setting a Rule to Reject ANY traffic that is not on the Allow Rules</p>
 </p>
 
 
