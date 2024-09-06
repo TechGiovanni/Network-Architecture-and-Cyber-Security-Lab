@@ -41,6 +41,13 @@ https://techgiovanni1.imgur.com/all
 <p>The Final Network Architecture including (Security Operations Center, Attack Network, System Administration, Virtual Private Networks, Office & Corporate Envrironments, and the Intermediary Devices Cisco Router Csr1000v and Windows Routing)</p>
 
 
+### Configuring the VPN IP Address
+<p align="center">
+<img src="https://i.imgur.com/vVH1zwR.png"/>
+<p>Ref 13: Windows VPN just to setup PFsense-FW3</p>
+</p>
+<p>We ned an IP Address to communicate to other end-point devices. IN this case its the firewall. The default gateway is the Pfsense Firewall. The is directlt connected to the PFsense, so it is faster to configure it using this server than configuring the WDS01 and routers just to get to the Firewall to get internet.</p>
+
 ### Setup Pfsense-FW3 to get Internet Access on the Internal LAN
 <p align="center">
 <img src="https://i.imgur.com/DlwV84Y.png"/>
@@ -80,17 +87,8 @@ https://techgiovanni1.imgur.com/all
 <p>Ref 12: Reject ANY traffic that is not on the Allow Rules</p></p>
 
 
-### Title
-<p align="center">
-<img src=""/>
-<img src=""/>
-<img src=""/>
-<img src=""/>
-<p>Ref 2: </p>
-</p>
-<p></p>
-<p></p>
-<p></p>
+
+
 
 
 ### Title
