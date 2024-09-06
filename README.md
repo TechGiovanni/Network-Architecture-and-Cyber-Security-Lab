@@ -44,14 +44,14 @@ https://techgiovanni1.imgur.com/all
 ### Configuring the VPN Server IP Address on LAN 4
 <p align="center">
 <img src="https://i.imgur.com/vVH1zwR.png"/>
-<p>Ref 13: Windows VPN just to setup PFsense-FW3</p>
+<p>Ref 2: Windows VPN just to setup PFsense-FW3</p>
 </p>
 <p>We ned an IP Address to communicate to other end-point devices. IN this case its the firewall. The default gateway is the Pfsense Firewall. The is directlt connected to the PFsense, so it is faster to configure it using this server than configuring the WDS01 and routers just to get to the Firewall to get internet.</p>
 
 ### Setup Pfsense-FW3 to get Internet Access on the Internal LAN
 <p align="center">
 <img src="https://i.imgur.com/DlwV84Y.png"/>
-<p>Ref 2: Pfsense Firewall IP address setup</p>
+<p>Ref 3: Pfsense Firewall IP address setup</p>
 </p>
 <p>This allows up to get access to the Pfsense web interface to further do firewall configurations, rules and download packages.</p> 
 <p>Our VPN server is directly connected to LAN 4, as well as the LAN interface side of the Pfsense-FW3. The WAN interface side of the Pfsense-FW3 is automatically getting a IP Address from the Internet Service Provider and using NAT to translate internal IP addresses into a single address for connecting out onto the internet.</p>
@@ -61,41 +61,40 @@ https://techgiovanni1.imgur.com/all
 ### Pfsense-FW3 Initial Configurations Web Interface
 <p align="center">
 <img src="https://i.imgur.com/U5yhbFY.png"/>
-<p>Ref 3: Setting DNS, and Domain</p> 
+<p>Ref 4: Setting DNS, and Domain</p> 
 <img src="https://i.imgur.com/NBdm7o1.png"/>
-<p>Ref 4: Setting the Timezone for my current location</p>
+<p>Ref 5: Setting the Timezone for my current location</p>
 <img src="https://i.imgur.com/R5UVnDa.png"/>
-<p>Ref 5: Updating Pfsense to its latest version to mitigate vulnerability in the software</p>
+<p>Ref 6: Updating Pfsense to its latest version to mitigate vulnerability in the software</p>
 <img src="https://i.imgur.com/Jnlm3c0.png"/>
-<p>Ref 6: Change the default PFsense web interface to use HTTPS instead of HTTP</p></p>
+<p>Ref 7: Change the default PFsense web interface to use HTTPS instead of HTTP</p></p>
 
 - 
 
 ### Pfsense-FW3 Setting up TCP & UDP Aliases and Firewall Rules to be able to access the internet on the LAN interface
 <p align="center">
 <img src="https://i.imgur.com/j6KCKA0.png"/>
-<p>Ref 7: Creating a TCP group of Ports called an Alias to use for convenience instead of having single Port rules.</p>
+<p>Ref 8: Creating a TCP group of Ports called an Alias to use for convenience instead of having single Port rules.</p>
 <img src="https://i.imgur.com/cHjPxcT.png"/>
-<p>Ref 8: Creating a UDP group Alias.</p>
+<p>Ref 9: Creating a UDP group Alias.</p>
 <img src="https://i.imgur.com/Kc23syW.png"/>
-<p>Ref 9: Using the TCP Aliase in a firewall Rule to Allow Traffic on these ports</p>
+<p>Ref 10: Using the TCP Aliase in a firewall Rule to Allow Traffic on these ports</p>
 <img src="https://i.imgur.com/kjbqntR.png"/>
-<p>Ref 10: Using the UDP Aliase in a firewall Rule to Allow Traffic on these ports</p>
+<p>Ref 11: Using the UDP Aliase in a firewall Rule to Allow Traffic on these ports</p>
 <img src="https://i.imgur.com/BtdBC6y.png"/>
-<p>Ref 11: Creating a Rule to Allow ICMP Traffic (Echo Request, Echo Reply, Destination Unreachable, Time Exceeded and Parameter Problem on the LAN Interface ) For pinging</p>
+<p>Ref 12: Creating a Rule to Allow ICMP Traffic (Echo Request, Echo Reply, Destination Unreachable, Time Exceeded and Parameter Problem on the LAN Interface ) For pinging</p>
 <img src="https://i.imgur.com/4wFJqW9.png"/>
-<p>Ref 12: Reject ANY traffic that is not on the Allow Rules</p></p>
+<p>Ref 13: Reject ANY traffic that is not on the Allow Rules</p></p>
 
 
 ### Install PFBlockerNG - 
 <p align="center">
 <img src="https://i.imgur.com/SlOIRHd.png"/>
-<img src=""/>
-<img src=""/>
-<img src=""/>
-<p>Ref 2: </p>
+<p>Ref 14: </p>
+<img src="blob:https://imgur.com/a6a816d3-ad6a-4b03-9aed-a91a0399524f"/>
+<p>Ref 15: </p>
 </p>
-<p>PFBlocker assigns many Ip Address Url lists such as IBlock Lists into a single Alias and choosing a Rule action to block Counrties and IP Block list Ranges. </p>
+<p>PFBlocker assigns many Ip Address Url lists such as IBlock Lists into a single Alias and choosing a Rule action to block Counrties, DNS and IP Block list Ranges. </p>
 <p>It aggregates several IP and DNS block lists into a single Alias that can be checked. </p>
 <p>This Stops traffic before the DNS Name resolution is even complete. Reducing the processing.</p>
 
@@ -103,21 +102,29 @@ https://techgiovanni1.imgur.com/all
 ### Install Snort - An Intrusion detection system (IDS) and Intrusion Prevention System (IPS)
 <p align="center">
 <img src="https://i.imgur.com/SlOIRHd.png"/>
-<img src=""/>
-<img src=""/>
-<img src=""/>
-<p>Ref 2: </p>
+  <p>Ref 16: Installed Snort</p>
+<img src="https://i.imgur.com/tl4391S.png"/>
+<p>Ref 17: Snort Running on Both Interfaces WAN & LAN</p>
+<img src="https://i.imgur.com/QPCjuUf.png"/>
+<p>Ref 18: LAN Configuration of Snort</p>
+<img src="https://i.imgur.com/aZMimrp.png"/>
+<p>Ref 19: WAN Configuration in snort</p>
+<img src="https://i.imgur.com/VTfsMOQ.png"/>
+<p>Ref 20: Snort Global Configurations 1</p>
+<img src="https://i.imgur.com/59Fd0pa.png"/>
+<p>Ref 21: Snort Global Configurations 2</p>
+<img src="https://i.imgur.com/kfnom77.png"/>
+<p>Ref 22: Snort Global Configurations 3</p>
 </p>
-<p></p>
-<p></p>
-<p></p>
+
+<p>Snort does signature based and Protocol Based Detection</p>
+<p>Snort shows alerts and Blocks suspected IP Addresses</p>
 
 
 
 
 ### Install Snort - An Intrusion detection system (IDS) and Intrusion Prevention System (IPS)
 <p align="center">
-<img src="https://i.imgur.com/SlOIRHd.png"/>
 <img src=""/>
 <img src=""/>
 <img src=""/>
@@ -128,7 +135,16 @@ https://techgiovanni1.imgur.com/all
 <p></p>
 
 
-
+### Install Snort - An Intrusion detection system (IDS) and Intrusion Prevention System (IPS)
+<p align="center">
+<img src=""/>
+<img src=""/>
+<img src=""/>
+<p>Ref 2: </p>
+</p>
+<p></p>
+<p></p>
+<p></p>
 
 
 
