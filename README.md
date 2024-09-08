@@ -218,21 +218,21 @@ https://techgiovanni1.imgur.com/all
 ### Setup this up the same way as Pfsense-FW3 
 
 <p align="center">
-  <p>Ref 36: </p> 
+  <p>Ref 36: Create an Alias of IP Addresses</p> 
   <img src="https://i.imgur.com/iJOa2Mk.png"/>
-  <p></p>
 </p>
 
 <p align="center">
-  <p>Ref 36: </p> 
-  <img src="https://i.imgur.com/iJOa2Mk.png"/>
-  <p></p>
+  <p>Ref 37: Created the Alias "Internal Network"</p> 
+  <img src="https://i.imgur.com/OFEMUfZ.png"/>
+  <p>This allows communication from internam network</p>
 </p>
 
 <p align="center">
-  <p>Ref 36: </p> 
-  <img src="https://i.imgur.com/iJOa2Mk.png"/>
-  <p></p>
+  <p>Ref 38: Allow TCP, UDP and ICMP</p> 
+  <img src="https://i.imgur.com/pR7yhha.png"/>
+  <p>Allow TCP and UDP to enter the WAN interface from any source and any destination</p>
+  <p>Allow ICMP from only the internal networks</p>
 </p>
 
 
@@ -240,54 +240,54 @@ https://techgiovanni1.imgur.com/all
 # Cisco Router CSR1000v
 ### Setup Cisco Router - IP Addresses, Passwords, usernames, SSH, ACLs
 <p align="center">
-  <p>Ref 37: Setup the IP Addresses for (GigabitEthernet1) LAN1 and (GigabitEthernet2) LAN 5 Interfaces on the Router</p> 
+  <p>Ref 39: Setup the IP Addresses for (GigabitEthernet1) LAN1 and (GigabitEthernet2) LAN 5 Interfaces on the Router</p> 
   <img src="https://i.imgur.com/9UsbIUx.png"/>
   <p></p>
 </p>
 
 <p align="center">
-  <p>Ref 38: Setup Passwords for enable mode</p>
+  <p>Ref 40: Setup Passwords for enable mode</p>
   <img src="https://i.imgur.com/IVVKL3w.png"/>
   <p>Also encrypt the plain text passwords on running-config using "service password-encryption"</p>
 </p>
 
 <p align="center">
-  <p>Ref 38: Setup Line VTY (Virtual Teletype) </p>
+  <p>Ref 41: Setup Line VTY (Virtual Teletype) </p>
   <img src="https://i.imgur.com/3lkZmqD.png"/>
   <p></p>
 </p>
 
 <p align="center">
-  <p>Ref 39: Created usernames and passwords</p>
+  <p>Ref 42: Created usernames and passwords</p>
   <img src="https://i.imgur.com/eQuUaji.png"/>
   <p> for those users using the password policy for string passwords and over 20 characters and only allow username and password to login</p>
 </p>
 
 <p align="center">
-  <p>Ref 40: Setup SSH on the Router</p>
+  <p>Ref 43: Setup SSH on the Router</p>
   <img src="https://i.imgur.com/09DQ8ep.png"/>
   <p>SSH allows for encryted traffic in both directions for confidentiality</p>
 </p>
 
 <p align="center">
-  <p>Ref 41: Setup Static Routes</p>
+  <p>Ref 44: Setup Static Routes</p>
   <img src="https://i.imgur.com/52QHTjL.png"/>
   <p>Allows for communication with the other Networks in our infrastructure.</p>
 </p>
 
 <p align="center">
-  <p>Ref 42: Cisco Routing table with A Static Route for unknown destinations "Last Resort"</p>
+  <p>Ref 45: Cisco Routing table with A Static Route for unknown destinations "Last Resort"</p>
   <img src="https://i.imgur.com/FXIZFq6.png"/>
 </p>
 
 <p align="center">
-  <p>Ref 43: Setup ACLs</p>
+  <p>Ref 46: Setup ACLs</p>
   <img src="https://i.imgur.com/b2NRtpo.png"/>
   <p> This was setup for the furture in case of malicious IP on the network that needs to be blocked. To mitigate risk.</p>
 </p>
 
 <p align="center">
-  <p>Ref 44: </p>
+  <p>Ref 47: </p>
   <img src=""/>
   <img src=""/>
   <img src=""/>
@@ -297,7 +297,7 @@ https://techgiovanni1.imgur.com/all
 </p>
 
 <p align="center">
-  <p>Ref 45: </p>
+  <p>Ref 48: </p>
   <img src=""/>
   <img src=""/>
   <img src=""/>
