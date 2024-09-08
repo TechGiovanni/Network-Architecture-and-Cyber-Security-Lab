@@ -129,9 +129,9 @@ https://techgiovanni1.imgur.com/all
   <img src="https://i.imgur.com/kfnom77.png"/>
   <p>Ref 25: Create a Passlist on snort to allow your internal network to flow threw and not get blocked</p>
   <img src="https://i.imgur.com/Yf7dP28.png"/>
-  <p>Ref 26: Create a Pass List</p>
+  <p>Ref 26: Snort Pass List</p>
   <img src="https://i.imgur.com/vmdDGJz.png"/>
-  <p>Ref 27: If you realize you dont have internet or you cant ping the firewall, you were maybe blocked.</p>
+  <p>Ref 27: If you realize you don't have internet or you can't ping the firewall, you were maybe blocked.</p>
   <img src="https://i.imgur.com/YuGSgbV.png"/>
   <p>Remove yourself from the block list by just clicking the "x" on the right side. Now you should be able to ping and have internel access.</p>
   <p>Ref 28: Include the Pass list on the snort LAN interface</p>
@@ -178,7 +178,7 @@ https://techgiovanni1.imgur.com/all
 </p>
 
 <p align="center">
-  <p>Ref 30: Set a default route for unknown destinations</p>
+  <p>Ref 30: Setting up default routes for unknown destinations for LAN 1 and LAN 6</p>
   <img src="https://i.imgur.com/uctHQJe.png"/>
   <img src="https://i.imgur.com/uctHQJe.png"/>
    <ul>
@@ -198,7 +198,7 @@ https://techgiovanni1.imgur.com/all
 
 <br>
 
-# Install The Router on the LANR1-4-6
+# Install The Remote Access (Routing) Roles and Feature on the LANR1-4-6
 <p align="center">
   <p>Ref 31: Add roles and Features to setup this Core server as a router</p>
   <img src="https://i.imgur.com/3KStiYR.png"/>
