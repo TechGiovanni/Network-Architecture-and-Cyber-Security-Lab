@@ -60,6 +60,8 @@ https://techgiovanni1.imgur.com/all
 
 ### Pfsense-FW3 Initial Configurations Web Interface
 <p align="center">
+  <img src="https://i.imgur.com/N2bKnkY.png"/>
+<p>Ref 4: Pfsense Web Interface on HTTP</p> 
 <img src="https://i.imgur.com/U5yhbFY.png"/>
 <p>Ref 4: Pfsense Web Interface for firewall configurations</p> 
 <img src="https://i.imgur.com/U5yhbFY.png"/>
@@ -119,11 +121,15 @@ https://techgiovanni1.imgur.com/all
 <p>Ref 23: Snort Global Configurations 3</p>
 <img src="https://i.imgur.com/Yf7dP28.png"/>
 <p>Ref 24: Create a Passlist on snort to allow your internal network to flow threw and not get blocked</p>
+<img src="https://i.imgur.com/vmdDGJz.png"/>
+<p>Ref 25: Create a Pass List</p>
 <img src="https://i.imgur.com/YuGSgbV.png"/>
-<p>Ref 25: If you realize you dont have internet or you cant ping the firewall, you were maybe blocked.</p>
-<p>Remove yourself from the block list buy just clicking the "x" on the right side. Now you should be able to ping and have internel access.</p>
+<p>Ref 26: If you realize you dont have internet or you cant ping the firewall, you were maybe blocked.</p>
+<p>Remove yourself from the block list by just clicking the "x" on the right side. Now you should be able to ping and have internel access.</p>
+
+
 <img src="https://i.imgur.com/SRVUHvv.png"/>
-<p>Ref 26: Include the Pass list on the snort LAN interface</p>
+<p>Ref 27: Include the Pass list on the snort LAN interface</p>
 </p>
 
 <p>Snort does signature based and Protocol Based Detection</p>
