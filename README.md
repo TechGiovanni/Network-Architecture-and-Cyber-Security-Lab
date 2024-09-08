@@ -143,7 +143,7 @@ https://techgiovanni1.imgur.com/all
 
 
 
-## Setup LANR1-4-6 (Windows Core Server as a LAN Router)
+# Setup LANR1-4-6 (Windows Core Server as a LAN Router)
 <p align="center">
   <p>sconfig</p>
   <p>Change the Computer Name</p>
