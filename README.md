@@ -65,9 +65,7 @@ https://techgiovanni1.imgur.com/all
 <p align="center">
   <p>Ref 4: Pfsense Web Interface on HTTP</p> 
   <img src="https://i.imgur.com/ChTG5rB.png"/>
-  <p>Ref 5: Pfsense Web Interface for firewall configurations</p> 
-  <img src="https://i.imgur.com/U5yhbFY.png"/>
-  <p>Ref 6: Setting DNS, and Domain</p> 
+  <p>Ref 6: Pfsense Web Interface for firewall configurations - Setting DNS, and Domain</p> 
   <img src="https://i.imgur.com/U5yhbFY.png"/>
   <p>Ref 7: Setting the Timezone for my current location</p>
   <img src="https://i.imgur.com/NBdm7o1.png"/>
