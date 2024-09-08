@@ -202,16 +202,14 @@ https://techgiovanni1.imgur.com/all
 <p align="center">
   <p>Ref 31: Add roles and Features to setup this Core server as a router</p>
   <img src="https://i.imgur.com/3KStiYR.png"/>
-  <p>Ref 32: Choose Routing</p>
+  <p>Ref 32: Choose The Role for "Routing"</p>
   <img src="https://i.imgur.com/UuF8qJ6.png"/>
-  <p>Ref 33: Add REmote amangeemnt tools to the WDS01 Management and Devployment Server</p>
+  <p>Ref 33: Add Remote management tools to the WDS01 Management and Deployment Server</p>
   <img src="https://i.imgur.com/KhHxexz.png"/>
-  <p>Ref 34: Setup routing on the LANR1-4-6 Server. Custom Configuration and then LAN routing</p>
+  <p>Ref 34: Setup routing on the LANR1-4-6 Server. Choose "Custom Configuration" and then "LAN Routing"</p>
   <img src="https://i.imgur.com/eAah4hk.png"/>
-  <p>Ref 35: Setup Routing using Static routes, So packets can get through the router and onto the other side</p>
+  <p>Ref 35: Setup Static Routes, So packets can get through the router and onto the other side</p>
   <img src="https://i.imgur.com/fDBw9wb.png"/>
-  <img src=""/>
-  <p>Ref 36: </p>
 </p>
 
 ### Install Snort 
