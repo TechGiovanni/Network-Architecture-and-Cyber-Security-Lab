@@ -43,7 +43,7 @@ https://techgiovanni1.imgur.com/all
 
 ### Configuring the VPN Server IP Address on LAN 4
 <p align="center">
-<p>Ref 2: Windows VPN just to setup PFsense-FW3</p>
+<p>Ref 2: Windows VPN Server on LAN 4 to setup the PFsense-FW3</p>
 <img src="https://i.imgur.com/vVH1zwR.png"/>
 </p>
 <p>We ned an IP Address to communicate to other end-point devices. IN this case its the firewall. The default gateway is the Pfsense Firewall. The is directlt connected to the PFsense, so it is faster to configure it using this server than configuring the WDS01 and routers just to get to the Firewall to get internet.</p>
@@ -64,7 +64,7 @@ https://techgiovanni1.imgur.com/all
 ### Pfsense-FW3 Initial Configurations Web Interface
 <p align="center">
 <p>Ref 4: Pfsense Web Interface on HTTP</p> 
-<img src="https://i.imgur.com/N2bKnkY.png"/>
+<img src="https://i.imgur.com/eczx7Fx.png"/>
 <p>Ref 5: Pfsense Web Interface for firewall configurations</p> 
 <img src="https://i.imgur.com/U5yhbFY.png"/>
 <p>Ref 6: Setting DNS, and Domain</p> 
