@@ -35,110 +35,109 @@ https://techgiovanni1.imgur.com/all
 
 ## Steps
 <p align="center">
-<p>Ref 1: Network Diagram</p>
-<img src="https://i.imgur.com/IMgwPno.png"/>
+  <p>Ref 1: Network Diagram</p>
+  <img src="https://i.imgur.com/IMgwPno.png"/>
 </p>
 <p>The Final Network Architecture including (Security Operations Center, Attack Network, System Administration, Virtual Private Networks, Office & Corporate Envrironments, and the Intermediary Devices Cisco Router Csr1000v and Windows Routing)</p>
 
 
 ### Configuring the VPN Server IP Address on LAN 4
 <p align="center">
-<p>Ref 2: Windows VPN Server on LAN 4 to setup the PFsense-FW3</p>
-<img src="https://i.imgur.com/vVH1zwR.png"/>
+  <p>Ref 2: Windows VPN Server on LAN 4 to setup the PFsense-FW3</p>
+  <img src="https://i.imgur.com/vVH1zwR.png"/>
 </p>
 <p>We ned an IP Address to communicate to other end-point devices. IN this case its the firewall. The default gateway is the Pfsense Firewall. The is directlt connected to the PFsense, so it is faster to configure it using this server than configuring the WDS01 and routers just to get to the Firewall to get internet.</p>
 
 
 -
 
-## Setup Pfsense-FW3 to get Internet Access on the Internal LAN
+# Setup Pfsense-FW3 to get Internet Access on the Internal LAN
 <p align="center">
-<p>Ref 3: Pfsense Firewall IP address setup</p>
-<img src="https://i.imgur.com/DlwV84Y.png"/>
+  <p>Ref 3: Pfsense Firewall IP address setup</p>
+  <img src="https://i.imgur.com/DlwV84Y.png"/>
 </p>
 <p>This allows up to get access to the Pfsense web interface to further do firewall configurations, rules and download packages.</p> 
 <p>Our VPN server is directly connected to LAN 4, as well as the LAN interface side of the Pfsense-FW3. The WAN interface side of the Pfsense-FW3 is automatically getting a IP Address from the Internet Service Provider and using NAT to translate internal IP addresses into a single address for connecting out onto the internet.</p>
 
 - 
 
-### Pfsense-FW3 Initial Configurations Web Interface
+## Pfsense-FW3 Initial Configurations Web Interface
 <p align="center">
-<p>Ref 4: Pfsense Web Interface on HTTP</p> 
-<img src="https://i.imgur.com/eczx7Fx.png"/>
-<p>Ref 5: Pfsense Web Interface for firewall configurations</p> 
-<img src="https://i.imgur.com/U5yhbFY.png"/>
-<p>Ref 6: Setting DNS, and Domain</p> 
-<img src="https://i.imgur.com/U5yhbFY.png"/>
-<p>Ref 7: Setting the Timezone for my current location</p>
-<img src="https://i.imgur.com/NBdm7o1.png"/>
-<p>Ref 8: Updating Pfsense to its latest version to mitigate vulnerability in the software</p>
-<img src="https://i.imgur.com/R5UVnDa.png"/>
-<p>Ref 9: Change the default PFsense web interface to use HTTPS instead of HTTP</p></p>
-<img src="https://i.imgur.com/Jnlm3c0.png"/>
-
+  <p>Ref 4: Pfsense Web Interface on HTTP</p> 
+  <img src="https://i.imgur.com/jyaTDXL.png"/>
+  <p>Ref 5: Pfsense Web Interface for firewall configurations</p> 
+  <img src="https://i.imgur.com/U5yhbFY.png"/>
+  <p>Ref 6: Setting DNS, and Domain</p> 
+  <img src="https://i.imgur.com/U5yhbFY.png"/>
+  <p>Ref 7: Setting the Timezone for my current location</p>
+  <img src="https://i.imgur.com/NBdm7o1.png"/>
+  <p>Ref 8: Updating Pfsense to its latest version to mitigate vulnerability in the software</p>
+  <img src="https://i.imgur.com/R5UVnDa.png"/>
+  <p>Ref 9: Change the default PFsense web interface to use HTTPS instead of HTTP</p>
+  <img src="https://i.imgur.com/Jnlm3c0.png"/>
+  </p>
 
 - 
 
-### Pfsense-FW3 Setting up TCP & UDP Aliases and Firewall Rules to be able to access the internet on the LAN interface
+## Pfsense-FW3 Setting up TCP & UDP Aliases and Firewall Rules to be able to access the internet on the LAN interface
 <p align="center">
-<p>Ref 10: Creating a TCP group of Ports called an Alias to use for convenience instead of having single Port rules.</p>
-<img src="https://i.imgur.com/j6KCKA0.png"/>
-<p>Ref 11: Creating a UDP group Alias.</p>
-<img src="https://i.imgur.com/cHjPxcT.png"/>
-<p>Ref 12: Using the TCP Aliase in a firewall Rule to Allow Traffic on these ports</p>
-<img src="https://i.imgur.com/Kc23syW.png"/>
-<p>Ref 13: Using the UDP Aliase in a firewall Rule to Allow Traffic on these ports</p>
-<img src="https://i.imgur.com/kjbqntR.png"/>
-<p>Ref 14: Creating a Rule to Allow ICMP Traffic (Echo Request, Echo Reply, Destination Unreachable, Time Exceeded and Parameter Problem on the LAN Interface ) For pinging</p>
-<img src="https://i.imgur.com/BtdBC6y.png"/>
-<p>Ref 15: Reject ANY traffic that is not on the Allow Rules</p></p>
-<img src="https://i.imgur.com/4wFJqW9.png"/>
+  <p>Ref 10: Creating a TCP group of Ports called an Alias to use for convenience instead of having single Port rules.</p>
+  <img src="https://i.imgur.com/j6KCKA0.png"/>
+  <p>Ref 11: Creating a UDP group Alias.</p>
+  <img src="https://i.imgur.com/cHjPxcT.png"/>
+  <p>Ref 12: Using the TCP Aliase in a firewall Rule to Allow Traffic on these ports</p>
+  <img src="https://i.imgur.com/Kc23syW.png"/>
+  <p>Ref 13: Using the UDP Aliase in a firewall Rule to Allow Traffic on these ports</p>
+  <img src="https://i.imgur.com/kjbqntR.png"/>
+  <p>Ref 14: Creating a Rule to Allow ICMP Traffic (Echo Request, Echo Reply, Destination Unreachable, Time Exceeded and Parameter Problem on the LAN Interface ) For pinging</p>
+  <img src="https://i.imgur.com/BtdBC6y.png"/>
+  <p>Ref 15: Reject ANY traffic that is not on the Allow Rules</p>
+  <img src="https://i.imgur.com/4wFJqW9.png"/>
+</p>
 
 
-
-## Install PFBlockerNG  
+# Install PFBlockerNG  
 <p align="center">
-<p>Ref 16: Install PFBlockerNG Package</p>
-<img src="https://i.imgur.com/rPFW2W6.png"/>
-
-<p>Ref 17: The DNS Url and IP Address Block list created by PFBlockerNG</p>
-<!--  <img src="blob:https://imgur.com/a6a816d3-ad6a-4b03-9aed-a91a0399524f"/> -->
-<img src="https://i.imgur.com/ogXgVfw.png"/>
-<p>PFBlocker assigns many Ip Address Url lists such as IBlock Lists into a single Alias and choosing a Rule action to block Counrties, DNS and IP Block list Ranges. </p>
-<p>It aggregates several IP and DNS block lists into a single Alias that can be checked. </p>
-<p>This Stops traffic before the DNS Name resolution is even complete. Reducing the processing.</p>
+  <p>Ref 16: Install PFBlockerNG Package</p>
+  <img src="https://i.imgur.com/rPFW2W6.png"/>
+  
+  <p>Ref 17: The DNS Url and IP Address Block list created by PFBlockerNG</p>
+  <!--  <img src="blob:https://imgur.com/a6a816d3-ad6a-4b03-9aed-a91a0399524f"/> -->
+  <img src="https://i.imgur.com/ogXgVfw.png"/>
+  <p>PFBlocker assigns many Ip Address Url lists such as IBlock Lists into a single Alias and choosing a Rule action to block Counrties, DNS and IP Block list Ranges. </p>
+  <p>It aggregates several IP and DNS block lists into a single Alias that can be checked. </p>
+  <p>This Stops traffic before the DNS Name resolution is even complete. Reducing the processing.</p>
 </p>
 
 
 
-## Install Snort - An Intrusion detection system (IDS) and Intrusion Prevention System (IPS)
+# Install Snort - An Intrusion detection system (IDS) and Intrusion Prevention System (IPS)
 <p align="center">
-<p>Ref 18: Installed Snort</p>
-<img src="https://i.imgur.com/SlOIRHd.png"/>
-<p>Ref 19: Snort Running on Both Interfaces WAN & LAN</p>
-<img src="https://i.imgur.com/tl4391S.png"/>
-<p>Ref 20: LAN Configuration of Snort</p>
-<img src="https://i.imgur.com/QPCjuUf.png"/>
-<p>Ref 21: WAN Configuration in snort</p>
-<img src="https://i.imgur.com/aZMimrp.png"/>
-<p>Ref 22: Snort Global Configurations 1</p>
-<img src="https://i.imgur.com/VTfsMOQ.png"/>
-<p>Ref 23: Snort Global Configurations 2</p>
-<img src="https://i.imgur.com/59Fd0pa.png"/>
-<p>Ref 24: Snort Global Configurations 3</p>
-<img src="https://i.imgur.com/kfnom77.png"/>
-<p>Ref 25: Create a Passlist on snort to allow your internal network to flow threw and not get blocked</p>
-<img src="https://i.imgur.com/Yf7dP28.png"/>
-<p>Ref 26: Create a Pass List</p>
-<img src="https://i.imgur.com/vmdDGJz.png"/>
-<p>Ref 27: If you realize you dont have internet or you cant ping the firewall, you were maybe blocked.</p>
-<img src="https://i.imgur.com/YuGSgbV.png"/>
-<p>Remove yourself from the block list by just clicking the "x" on the right side. Now you should be able to ping and have internel access.</p>
-
-<p>Ref 28: Include the Pass list on the snort LAN interface</p>
-<img src="https://i.imgur.com/SRVUHvv.png"/>
-<p>Snort does signature based and Protocol Based Detection</p>
-<p>Snort shows alerts and Blocks suspected IP Addresses</p>
+  <p>Ref 18: Installed Snort</p>
+  <img src="https://i.imgur.com/SlOIRHd.png"/>
+  <p>Ref 19: Snort Running on Both Interfaces WAN & LAN</p>
+  <img src="https://i.imgur.com/tl4391S.png"/>
+  <p>Ref 20: LAN Configuration of Snort</p>
+  <img src="https://i.imgur.com/QPCjuUf.png"/>
+  <p>Ref 21: WAN Configuration in snort</p>
+  <img src="https://i.imgur.com/aZMimrp.png"/>
+  <p>Ref 22: Snort Global Configurations 1</p>
+  <img src="https://i.imgur.com/VTfsMOQ.png"/>
+  <p>Ref 23: Snort Global Configurations 2</p>
+  <img src="https://i.imgur.com/59Fd0pa.png"/>
+  <p>Ref 24: Snort Global Configurations 3</p>
+  <img src="https://i.imgur.com/kfnom77.png"/>
+  <p>Ref 25: Create a Passlist on snort to allow your internal network to flow threw and not get blocked</p>
+  <img src="https://i.imgur.com/Yf7dP28.png"/>
+  <p>Ref 26: Create a Pass List</p>
+  <img src="https://i.imgur.com/vmdDGJz.png"/>
+  <p>Ref 27: If you realize you dont have internet or you cant ping the firewall, you were maybe blocked.</p>
+  <img src="https://i.imgur.com/YuGSgbV.png"/>
+  <p>Remove yourself from the block list by just clicking the "x" on the right side. Now you should be able to ping and have internel access.</p>
+  <p>Ref 28: Include the Pass list on the snort LAN interface</p>
+  <img src="https://i.imgur.com/SRVUHvv.png"/>
+  <p>Snort does signature based and Protocol Based Detection</p>
+  <p>Snort shows alerts and Blocks suspected IP Addresses</p>
 </p>
 
 
@@ -151,13 +150,16 @@ https://techgiovanni1.imgur.com/all
   <p>sconfig</p>
   <p>Change the Computer Name</p>
   <p>Update the timezone if necessary</p>
+
   <p>Ref 28: Allow Remote Management and update the IP Adrdesses of Each INterface</p>
   <img src="https://i.imgur.com/wtbEs0G.png"/>
   <ul>
     <li>winrm Quickconfig</li>
     <li>set-netfirewallrule -Profile Public,Private,Domain -DisplayGroup "Windows Remote Management" -Enabled True</li>
   </ul>
+</p> 
 
+<p align="center">
   <p>Ref 29: Rename Net Adapter Name</p>
   <img src="https://i.imgur.com/rQxMlxQ.png"/>
   <img src="https://i.imgur.com/d5mP42q.png"/>
@@ -173,7 +175,9 @@ https://techgiovanni1.imgur.com/all
     <li>new-netipaddress -InterfaceAlias LAN4 -Ipaddress 192.168.4.253 -PrefixLength 24 -DefaultGateway 192.168.4.254</li>
     <li>new-netipaddress -InterfaceAlias LAN6 -Ipaddress 192.168.6.254 -PrefixLength 24</li>
   </ul>
+</p>
 
+<p align="center">
   <p>Ref 30: Set a default route for unknown destinations</p>
   <img src="https://i.imgur.com/uctHQJe.png"/>
   <img src="https://i.imgur.com/uctHQJe.png"/>
@@ -192,26 +196,22 @@ https://techgiovanni1.imgur.com/all
   </ul> 
 </p>
 
-### Install The Router on the LANR1-4-6
+<br>
+
+# Install The Router on the LANR1-4-6
 <p align="center">
-<p>Ref 31: Add roles and Features to setup this Core server as a router</p>
-<img src="https://i.imgur.com/3KStiYR.png"/>
-<p>Ref 32: Choose Routing</p>
-<img src="https://i.imgur.com/UuF8qJ6.png"/>
-<p>Ref 33: Add REmote amangeemnt tools to the WDS01 Management and Devployment Server</p>
-<img src="https://i.imgur.com/KhHxexz.png"/>
-<p>Ref 34: Setup routing on the LANR1-4-6 Server. Custom Configuration and then LAN routing</p>
-<img src="https://i.imgur.com/eAah4hk.png"/>
-<p>Ref 35: Setup Routing using Static routes, So packets can get through the router and onto the other side</p>
-<img src="https://i.imgur.com/fDBw9wb.png"/>
-<img src=""/>
-<p>Ref 36: </p>
-<img src=""/>
-<p>Ref 37: </p>
-<img src=""/>
-<p>Ref 38: </p>
-<img src=""/>
-<p>Ref 39: </p>
+  <p>Ref 31: Add roles and Features to setup this Core server as a router</p>
+  <img src="https://i.imgur.com/3KStiYR.png"/>
+  <p>Ref 32: Choose Routing</p>
+  <img src="https://i.imgur.com/UuF8qJ6.png"/>
+  <p>Ref 33: Add REmote amangeemnt tools to the WDS01 Management and Devployment Server</p>
+  <img src="https://i.imgur.com/KhHxexz.png"/>
+  <p>Ref 34: Setup routing on the LANR1-4-6 Server. Custom Configuration and then LAN routing</p>
+  <img src="https://i.imgur.com/eAah4hk.png"/>
+  <p>Ref 35: Setup Routing using Static routes, So packets can get through the router and onto the other side</p>
+  <img src="https://i.imgur.com/fDBw9wb.png"/>
+  <img src=""/>
+  <p>Ref 36: </p>
 </p>
 
 ### Install Snort 
