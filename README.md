@@ -214,16 +214,39 @@ https://techgiovanni1.imgur.com/all
 </p>
 
 
+# Setup PFsense-FW1
+### Setup this up the same way as Pfsense-FW3 
+
+<p align="center">
+  <p>Ref 36: </p> 
+  <img src="https://i.imgur.com/iJOa2Mk.png"/>
+  <p></p>
+</p>
+
+<p align="center">
+  <p>Ref 36: </p> 
+  <img src="https://i.imgur.com/iJOa2Mk.png"/>
+  <p></p>
+</p>
+
+<p align="center">
+  <p>Ref 36: </p> 
+  <img src="https://i.imgur.com/iJOa2Mk.png"/>
+  <p></p>
+</p>
+
+
+
 # Cisco Router CSR1000v
 ### Setup Cisco Router - IP Addresses, Passwords, usernames, SSH, ACLs
 <p align="center">
-  <p>Ref 36: Setup the IP Addresses for (GigabitEthernet1) LAN1 and (GigabitEthernet2) LAN 5 Interfaces on the Router</p> 
+  <p>Ref 37: Setup the IP Addresses for (GigabitEthernet1) LAN1 and (GigabitEthernet2) LAN 5 Interfaces on the Router</p> 
   <img src="https://i.imgur.com/9UsbIUx.png"/>
   <p></p>
 </p>
 
 <p align="center">
-  <p>Ref 37: Setup Passwords for enable mode</p>
+  <p>Ref 38: Setup Passwords for enable mode</p>
   <img src="https://i.imgur.com/IVVKL3w.png"/>
   <p>Also encrypt the plain text passwords on running-config using "service password-encryption"</p>
 </p>
