@@ -35,23 +35,23 @@ https://techgiovanni1.imgur.com/all
 
 ## Steps
 <p align="center">
-<img src="https://i.imgur.com/IMgwPno.png"/>
 <p>Ref 1: Network Diagram</p>
+<img src="https://i.imgur.com/IMgwPno.png"/>
 </p>
 <p>The Final Network Architecture including (Security Operations Center, Attack Network, System Administration, Virtual Private Networks, Office & Corporate Envrironments, and the Intermediary Devices Cisco Router Csr1000v and Windows Routing)</p>
 
 
 ### Configuring the VPN Server IP Address on LAN 4
 <p align="center">
-<img src="https://i.imgur.com/vVH1zwR.png"/>
 <p>Ref 2: Windows VPN just to setup PFsense-FW3</p>
+<img src="https://i.imgur.com/vVH1zwR.png"/>
 </p>
 <p>We ned an IP Address to communicate to other end-point devices. IN this case its the firewall. The default gateway is the Pfsense Firewall. The is directlt connected to the PFsense, so it is faster to configure it using this server than configuring the WDS01 and routers just to get to the Firewall to get internet.</p>
 
 ### Setup Pfsense-FW3 to get Internet Access on the Internal LAN
 <p align="center">
-<img src="https://i.imgur.com/DlwV84Y.png"/>
 <p>Ref 3: Pfsense Firewall IP address setup</p>
+<img src="https://i.imgur.com/DlwV84Y.png"/>
 </p>
 <p>This allows up to get access to the Pfsense web interface to further do firewall configurations, rules and download packages.</p> 
 <p>Our VPN server is directly connected to LAN 4, as well as the LAN interface side of the Pfsense-FW3. The WAN interface side of the Pfsense-FW3 is automatically getting a IP Address from the Internet Service Provider and using NAT to translate internal IP addresses into a single address for connecting out onto the internet.</p>
