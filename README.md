@@ -287,7 +287,7 @@ https://techgiovanni1.imgur.com/all
 </p>
 
 <p align="center">
-  <p>Ref 47: </p>
+  <p>Ref 47: Set </p>
   <img src=""/>
   <img src=""/>
   <img src=""/>
@@ -305,5 +305,16 @@ https://techgiovanni1.imgur.com/all
   <p></p>
   <p></p>
 </p>
+
+Setup Firewall for LAN 6-3
+Set-up DC01 (DHCP,WINS,DNS)
+Set-up DC02 (DHCP,WINS,DNS)
+Join the domain
+Seup Splunk on SOC Analyst PC
+Setup VPN
+Setup Firewall IDS/IPS on Pfsense-FW1 (S)
+
+
+
 
 
