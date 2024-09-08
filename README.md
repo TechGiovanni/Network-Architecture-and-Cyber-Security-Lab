@@ -193,7 +193,6 @@ https://techgiovanni1.imgur.com/all
     <li>route print</li> <p>Verify that the default route has been set correctly </p>
   </ul> 
 </p>
-
 <br>
 
 # Install The Remote Access (Routing) Roles and Feature on the LANR1-4-6
@@ -210,7 +209,9 @@ https://techgiovanni1.imgur.com/all
   <img src="https://i.imgur.com/fDBw9wb.png"/>
 </p>
 
-### Install Snort 
+### Setup Pfsense-FW1 using the same configuratiosn as PFsense-FW3 
+
+### Setup Cisco Router
 <p align="center">
   <p>Ref 40: </p>
   <img src=""/>
