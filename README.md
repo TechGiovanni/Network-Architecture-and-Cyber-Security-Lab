@@ -93,9 +93,10 @@ https://techgiovanni1.imgur.com/all
 
 ### Install PFBlockerNG  
 <p align="center">
-<img src="https://i.imgur.com/SlOIRHd.png"/>
+<img src="https://i.imgur.com/rPFW2W6.png"/>
 <p>Ref 16: </p>
-<img src="blob:https://imgur.com/a6a816d3-ad6a-4b03-9aed-a91a0399524f"/>
+<!--  <img src="blob:https://imgur.com/a6a816d3-ad6a-4b03-9aed-a91a0399524f"/> -->
+<img src="https://i.imgur.com/ogXgVfw.png"/>
 <p>Ref 17: </p>
 </p>
 <p>PFBlocker assigns many Ip Address Url lists such as IBlock Lists into a single Alias and choosing a Rule action to block Counrties, DNS and IP Block list Ranges. </p>
