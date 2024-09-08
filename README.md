@@ -201,16 +201,20 @@ https://techgiovanni1.imgur.com/all
   <img src="https://i.imgur.com/3KStiYR.png"/>
   <p>Ref 32: Choose The Role for "Routing"</p>
   <img src="https://i.imgur.com/UuF8qJ6.png"/>
+
+# Add the Administration Roles and Features to WDS01 Mangement Server
   <p>Ref 33: Add Remote management tools to the WDS01 Management and Deployment Server</p>
   <img src="https://i.imgur.com/KhHxexz.png"/>
+
+# Access and Finish Setting up The Remote Access (Routing) Roles and Feature on the LANR1-4-6
   <p>Ref 34: Setup routing on the LANR1-4-6 Server. Choose "Custom Configuration" and then "LAN Routing"</p>
   <img src="https://i.imgur.com/eAah4hk.png"/>
   <p>Ref 35: Setup Static Routes, So packets can get through the router and onto the other side</p>
   <img src="https://i.imgur.com/fDBw9wb.png"/>
 </p>
 
-# Cisco Router CSR1000v
 
+# Cisco Router CSR1000v
 ### Setup Cisco Router - IP Addresses, Passwords, usernames, SSH, ACLs
 <p align="center">
   <p>Ref 36: Setup the IP Addresses for (GigabitEthernet1) LAN1 and (GigabitEthernet2) LAN 5 Interfaces on the Router</p> 
@@ -260,7 +264,7 @@ https://techgiovanni1.imgur.com/all
 </p>
 
 <p align="center">
-  <p>Ref 40: </p>
+  <p>Ref 44: </p>
   <img src=""/>
   <img src=""/>
   <img src=""/>
@@ -270,7 +274,7 @@ https://techgiovanni1.imgur.com/all
 </p>
 
 <p align="center">
-  <p>Ref 40: </p>
+  <p>Ref 45: </p>
   <img src=""/>
   <img src=""/>
   <img src=""/>
