@@ -64,7 +64,7 @@ https://techgiovanni1.imgur.com/all
 ## Pfsense-FW3 Initial Configurations Web Interface
 <p align="center">
   <p>Ref 4: Pfsense Web Interface on HTTP</p> 
-  <img src="https://i.imgur.com/jyaTDXL.png"/>
+  <img src="https://i.imgur.com/ChTG5rB.png"/>
   <p>Ref 5: Pfsense Web Interface for firewall configurations</p> 
   <img src="https://i.imgur.com/U5yhbFY.png"/>
   <p>Ref 6: Setting DNS, and Domain</p> 
