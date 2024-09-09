@@ -353,16 +353,13 @@ https://techgiovanni1.imgur.com/all
   <p>Ref 48: Setup noth LAN and WAN Ip Addresses</p>
   <img src="https://i.imgur.com/5W4GMNx.png"/>
   <p>Now we will have access to the Pfsense web interface from within the LAN network that is directly connected</p>
-  <p>This finish setup the Pfsense firewall using the DC01 Virtual Machine as its directly connected</p>
-  <p>Then we will setup Active Directory, DHCP,DNS and WINS Server. then add a redundant DC02 controller for Availability purposes.</p>
-  <p></p>
 </p>
 
-
+## Create a Windows Desktop Virtual Machine to finish configuring the PFsense-FW2
 <p align="center">
   <p>Ref 48: </p>
   <img src=""/>
-  <p></p>
+  <p>The configuration process will be the same as Pfsense-FW2 expect for the IPS/IDS system</p>
   <p></p>
   <p></p>
 </p>
