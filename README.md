@@ -382,89 +382,146 @@ https://techgiovanni1.imgur.com/all
   <img src="https://i.imgur.com/PvTqcKu.png"/>
 </p>
 
+# Active Directory Domain Services
+<p align="center">
+  <p>Ref 63: DC01 IP Address configuration </p>
+  <img src="https://i.imgur.com/K80njvT.png"/>
+</p>
+
+<p align="center">
+  <p>Ref 64: DC01 remove ipv6 binding and allow remote management from the firewall</p>
+  <img src="https://i.imgur.com/YSCkv9i.png"/>
+</p>
+
+<p align="center">
+  <p>Ref 65: Added DC01 to Server Manager</p>
+  <img src="https://i.imgur.com/6ZNUMp5.png"/>
+</p>
+
+
+<p align="center">
+  <p>Ref 66: Install Active Directory DS  and DNS Roles</p>
+  <img src="https://i.imgur.com/fa5C91p.png"/>
+</p>
+
+
+<p align="center">
+  <p>Ref 67: Created a new forest</p>
+  <img src="https://i.imgur.com/oPqWsit.png"/>
+  <p>Promote ot Domain Controller</p>
+</p>
+
+
+<p align="center">
+  <p>Ref 68: Removing ipv6 and updating DNS</p>
+  <img src="https://i.imgur.com/4LvayDO.png"/>
+  <p>After successful Installation of ADDS update the ip configuration removing ipv6 and updating DNS</p>
+</p>
+
+<p align="center">
+  <p>Ref 69: Join the Domain from the WDS01 VM</p>
+  <img src="https://i.imgur.com/ibUkgC9.png"/>
+</p>
+
+
+## DNS Configuration
+<p align="center">
+  <p>Ref 70: Setup DNS Server REverse Lookup Zones</p>
+  <img src="https://i.imgur.com/Mpbu533.png"/>
+</p>
+
+## Install DHCP and WINS ROles and Features
+<p align="center">
+  <p>Ref 48: Added DHCP and WINS to DC02</p>
+  <img src="https://i.imgur.com/eRz3rrt.png"/>
+</p>
+
+## DCHP Configuration 
+<p align="center">
+  <p>Ref 48: Adding DHCP Scopes for issuing IP Addresses and IP Configurations</p>
+  <img src="https://i.imgur.com/35jBbbS.png"/>
+</p>
+
+<p align="center">
+  <p>Ref 48: DC01 Added IP Address Ranges for all Subnets</p>
+  <img src="https://i.imgur.com/mzzNrEL.png"/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 48: Added the Domain namd and DNS Ip Addresses</p>
+  <img src="https://i.imgur.com/Z9785cH.png"/>
+  <p></p>
+</p>
+
+## DC01 Setup WIns Server
+<p align="center">
+  <p>Ref 48: WINS Server setup</p>
+  <img src="https://i.imgur.com/Mxu44Tw.png"/>
+  <p></p>
+</p>
+
+# DC02 Redundant Domain Controller
+<p align="center">
+  <p>Ref 48: Added DC02 to Server Manager</p>
+  <img src="https://i.imgur.com/k6x3YQv.png"/>
+  <p></p>
+</p>
+
+<p align="center">
+  <p>Ref 48: Promoting DC02 as a Domain Controller</p>
+  <img src="https://i.imgur.com/7PfMCZ1.png"/>
+  <p>Installed Active Directory Domain Srevices and DNS Roles at the same times.</p>
+</p>
+
 ## dfvf
 <p align="center">
-  <p>Ref 63: </p>
-  <img src=""/>
+  <p>Ref 48: DC02 will replicate resources from DC01</p>
+  <img src="https://i.imgur.com/zekf4Xx.png"/>
   <p></p>
 </p>
 
 ## dfvf
 <p align="center">
-  <p>Ref 64: </p>
-  <img src=""/>
-  <p></p>
+  <p>Ref 48: Update the forwarders</p>
+  <img src="https://i.imgur.com/QdkPSUQ.png"/>
 </p>
 
-## dfvf
 <p align="center">
-  <p>Ref 65: </p>
-  <img src=""/>
+  <p>Ref 48: DC02 DNS Zones were Replicated automatically from DC01</p>
+  <img src="https://i.imgur.com/aSaZ4Nj.png"/>
   <p></p>
 </p>
 
-## dfvf
+## WINS SERVER for DC02
 <p align="center">
-  <p>Ref 66: </p>
-  <img src=""/>
+  <p>Ref 48: Replicate from DC01 for names and computers</p>
+  <img src="https://i.imgur.com/U2iUEIm.png"/>
   <p></p>
 </p>
 
-## dfvf
+
 <p align="center">
-  <p>Ref 67: </p>
-  <img src=""/>
+  <p>Ref 48: Recored names of connected compueters</p>
+  <img src="https://i.imgur.com/EC6u97g.png"/>
   <p></p>
 </p>
 
-## dfvf
-<p align="center">
-  <p>Ref 68: </p>
-  <img src=""/>
-  <p></p>
-</p>
 
-## dfvf
-<p align="center">
-  <p>Ref 69: </p>
-  <img src=""/>
-  <p></p>
-</p>
 
-## dfvf
-<p align="center">
-  <p>Ref 70: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-## dfvf
 <p align="center">
   <p>Ref 48: </p>
   <img src=""/>
   <p></p>
 </p>
 
-## dfvf
-<p align="center">
-  <p>Ref 48: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-## dfvf
-<p align="center">
-  <p>Ref 48: </p>
-  <img src=""/>
-  <p></p>
-</p>
 
 
-
-Setup Firewall for LAN 6-3
-Set-up DC01 (DHCP,WINS,DNS)
-Set-up DC02 (DHCP,WINS,DNS)
-Join the domain
+Setup Firewall for LAN 6-3 (Check)
+Set-up DC01 (DHCP,WINS,DNS) (Check)
+Set-up DC02 (DHCP,WINS,DNS) (Check)
+Join the domain (Check)
 Seup Splunk on SOC Analyst PC
 Setup VPN
 Setup Firewall IDS/IPS on Pfsense-FW1 (S)
