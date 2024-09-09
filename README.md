@@ -358,11 +358,105 @@ https://techgiovanni1.imgur.com/all
 ## Create a Windows Desktop Virtual Machine to finish configuring the PFsense-FW2
 <p align="center">
   <p>Ref 48: </p>
-  <img src=""/>
+  <img src="https://i.imgur.com/JD55gaF.png"/>
   <p>The configuration process will be the same as Pfsense-FW2 expect for the IPS/IDS system</p>
-  <p></p>
+  <p>Then we will setup Active Directory, DHCP,DNS and WINS Server. then add a redundant DC02 controller for Availability purposes.</p>
+</p>
+
+# PFsense-FW2 WAN interface Rule Update
+<p align="center">
+  <p>Ref 48: Updating the Firewall rule fro Pfsense-FW2 </p>
+  <img src="https://i.imgur.com/LB8V0JL.png"/>
+  <p>Updating the Firewall rule to allow Active Directory Services Inbound on TCP ports on the WAN interface</p>
+</p>
+
+
+
+## dfvf
+<p align="center">
+  <p>Ref 48: </p>
+  <img src=""/>
   <p></p>
 </p>
+
+## dfvf
+<p align="center">
+  <p>Ref 48: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+## dfvf
+<p align="center">
+  <p>Ref 48: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+## dfvf
+<p align="center">
+  <p>Ref 48: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+## dfvf
+<p align="center">
+  <p>Ref 48: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+## dfvf
+<p align="center">
+  <p>Ref 48: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+## dfvf
+<p align="center">
+  <p>Ref 48: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+## dfvf
+<p align="center">
+  <p>Ref 48: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+## dfvf
+<p align="center">
+  <p>Ref 48: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+## dfvf
+<p align="center">
+  <p>Ref 48: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+## dfvf
+<p align="center">
+  <p>Ref 48: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+## dfvf
+<p align="center">
+  <p>Ref 48: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
 
 Setup Firewall for LAN 6-3
 Set-up DC01 (DHCP,WINS,DNS)
@@ -372,6 +466,12 @@ Seup Splunk on SOC Analyst PC
 Setup VPN
 Setup Firewall IDS/IPS on Pfsense-FW1 (S)
 
+
+<p align="center">
+  <p>Ref 48: </p>
+  <img src=""/>
+  <p></p>
+</p>
 
 
 
