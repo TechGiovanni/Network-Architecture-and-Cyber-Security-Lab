@@ -37,13 +37,15 @@ https://techgiovanni1.imgur.com/all
 <p align="center">
   <p>Ref 1: Network Diagram</p>
   <img src="https://i.imgur.com/IMgwPno.png"/>
+  <p>Ref 2: Hyper-V Manager - Hosting all of the Virtual Machines used in this Project</p>
+  <img src="https://i.imgur.com/PImBLSe.png"/>
 </p>
 <p>The Final Network Architecture including (Security Operations Center, Attack Network, System Administration, Virtual Private Networks, Office & Corporate Envrironments, and the Intermediary Devices Cisco Router Csr1000v and Windows Routing)</p>
 
 
 ### Configuring the VPN Server IP Address on LAN 4
 <p align="center">
-  <p>Ref 2: Windows VPN Server on LAN 4 to setup the PFsense-FW3</p>
+  <p>Ref 3: Windows VPN Server on LAN 4 to setup the PFsense-FW3</p>
   <img src="https://i.imgur.com/vVH1zwR.png"/>
 </p>
 <p>We ned an IP Address to communicate to other end-point devices. IN this case its the firewall. The default gateway is the Pfsense Firewall. The is directlt connected to the PFsense, so it is faster to configure it using this server than configuring the WDS01 and routers just to get to the Firewall to get internet.</p>
@@ -53,7 +55,7 @@ https://techgiovanni1.imgur.com/all
 
 # Setup Pfsense-FW3 to get Internet Access on the Internal LAN
 <p align="center">
-  <p>Ref 3: Pfsense Firewall IP address setup</p>
+  <p>Ref 4: Pfsense Firewall IP address setup</p>
   <img src="https://i.imgur.com/DlwV84Y.png"/>
 </p>
 <p>This allows up to get access to the Pfsense web interface to further do firewall configurations, rules and download packages.</p> 
@@ -286,20 +288,79 @@ https://techgiovanni1.imgur.com/all
   <p> This was setup for the furture in case of malicious IP on the network that needs to be blocked. To mitigate risk.</p>
 </p>
 
+
+# Setup Pfsense-FW2
+
+
 <p align="center">
-  <p>Ref 47: Set </p>
-  <img src=""/>
-  <img src=""/>
-  <img src=""/>
-  <p></p>
-  <p></p>
+  <p>Ref 47: Pfsense copyright Acceptance to accept</p>
+  <img src="https://i.imgur.com/Flk62PP.png"/>
+  <p>Ref 48: Installation of Pfsense</p>
+  <img src="https://i.imgur.com/QTOKHDh.png"/>
+</p>
+
+<p align="center">
+  <p>Ref 48: Choose Manual Disk Setup (experts) </p>
+  <img src="https://i.imgur.com/OnTuIOV.png"/>
+  <p>This method is the only one that works so far while using Pfsense.</p>
+</p>
+
+
+<p align="center">
+  <p>Ref 48: Auto Disk setup</p>
+  <img src="https://i.imgur.com/ogc87Fx.png"/>
+  <p>This created three partitions (da0p1 da0p2, da0p3)</p>
+</p>
+
+<p align="center">
+  <p>Ref 48: Commit these changes</p>
+  <img src="https://i.imgur.com/Qa66xrZ.png"/>
   <p></p>
 </p>
 
 <p align="center">
+  <p>Ref 48: Extracting the files and installing them on the disk.</p>
+  <img src="https://i.imgur.com/izkp3AJ.png"/>
+</p>
+
+<p align="center">
+  <p>Ref 48: Installation of Pfsense is Complete</p>
+  <img src="blob:https://imgur.com/8be6885e-692d-4b64-85a2-74abafdfd8ce"/>
+  <p>After the installation is complete we will go to the shell.</p>
+</p>
+
+<p align="center">
+  <p>Ref 48: Halt Pfsense</p>
+  <img src="https://i.imgur.com/CCX6Z3l.png"/>
+  <p>We need some tiem to remove the ISO before Pfsense Reboots, Otherwise we will get the screen to Install Pfsense again.</p>
+  <p>Eject the Pfsense ISO disk at this time.</p>
+  <p>After ISO is ejected. CLick any key to continue with the reboot.</p>
+</p>
+
+<p align="center">
+  <p>Ref 48: Pfsense Initial Screen after reboot</p>
+  <img src="https://i.imgur.com/t2yOlUV.png"/>
+  <p>Only the default LAN ip address is setup. We will change this to our internal IP Addresses.</p>
+</p>
+
+<p align="center">
+  <p>Ref 48: WAN interface IP Address setup</p>
+  <img src="https://i.imgur.com/GbtZ4Yg.png"/>
+  <p>This is pointing to the internet</p>
+</p>
+
+<p align="center">
+  <p>Ref 48: Setup noth LAN and WAN Ip Addresses</p>
+  <img src="https://i.imgur.com/5W4GMNx.png"/>
+  <p>Now we will have access to the Pfsense web interface from within the LAN network that is directly connected</p>
+  <p>This finish setup the Pfsense firewall using the DC01 Virtual Machine as its directly connected</p>
+  <p>Then we will setup Active Directory, DHCP,DNS and WINS Server. then add a redundant DC02 controller for Availability purposes.</p>
+  <p></p>
+</p>
+
+
+<p align="center">
   <p>Ref 48: </p>
-  <img src=""/>
-  <img src=""/>
   <img src=""/>
   <p></p>
   <p></p>
