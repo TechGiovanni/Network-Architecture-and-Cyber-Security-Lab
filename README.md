@@ -350,12 +350,13 @@ https://techgiovanni1.imgur.com/all
 </p>
 
 <p align="center">
-  <p>Ref 48: Setup noth LAN and WAN Ip Addresses</p>
+  <p>Ref 48: Setup the LAN and WAN Ip Addresses</p>
   <img src="https://i.imgur.com/5W4GMNx.png"/>
   <p>Now we will have access to the Pfsense web interface from within the LAN network that is directly connected</p>
 </p>
 
-## Create a Windows Desktop Virtual Machine to finish configuring the PFsense-FW2
+
+# Create a Windows Desktop Virtual Machine to finish configuring the PFsense-FW2
 <p align="center">
   <p>Ref 48: </p>
   <img src="https://i.imgur.com/JD55gaF.png"/>
@@ -363,20 +364,22 @@ https://techgiovanni1.imgur.com/all
   <p>Then we will setup Active Directory, DHCP,DNS and WINS Server. then add a redundant DC02 controller for Availability purposes.</p>
 </p>
 
-# PFsense-FW2 WAN interface Rule Update
+## PFsense-FW2 WAN interface Rule Update
 <p align="center">
-  <p>Ref 48: Updating the Firewall rule fro Pfsense-FW2 </p>
-  <img src="https://i.imgur.com/LB8V0JL.png"/>
+  <p>Ref 48: Updating the Firewall TCP Alias to include Active directory ports on the LAN</p>
+  <img src="https://i.imgur.com/Ep2UM28.png"/>
   <p>Updating the Firewall rule to allow Active Directory Services Inbound on TCP ports on the WAN interface</p>
 </p>
 
-
-
-## dfvf
 <p align="center">
-  <p>Ref 48: </p>
-  <img src=""/>
-  <p></p>
+  <p>Ref 48: Updating the Firewall UDP Alias to include Active directory ports on the LAN</p>
+  <img src="https://i.imgur.com/o19qfEz.png"/>
+  <p>Updating the Firewall rule to allow Active Directory Services Inbound on TCP ports on the WAN interface</p>
+</p>
+
+<p align="center">
+  <p>Ref 48: Created the Randomly allocated port used by Active Directory to use inside of TCP_Standard_Outbound</p>
+  <img src="https://i.imgur.com/PvTqcKu.png"/>
 </p>
 
 ## dfvf
