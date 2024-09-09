@@ -65,7 +65,7 @@ https://techgiovanni1.imgur.com/all
 
 ## Pfsense-FW3 Initial Configurations Web Interface
 <p align="center">
-  <p>Ref 4: Pfsense Web Interface on HTTP</p> 
+  <p>Ref 5: Pfsense Web Interface on HTTP</p> 
   <img src="https://i.imgur.com/ChTG5rB.png"/>
   <p>Ref 6: Pfsense Web Interface for firewall configurations - Setting DNS, and Domain</p> 
   <img src="https://i.imgur.com/U5yhbFY.png"/>
@@ -151,7 +151,7 @@ https://techgiovanni1.imgur.com/all
   <p>Change the Computer Name</p>
   <p>Update the timezone if necessary</p>
 
-  <p>Ref 28: Allow Remote Management and update the IP Adrdesses of Each INterface</p>
+  <p>Ref 29: Allow Remote Management and update the IP Adrdesses of Each INterface</p>
   <img src="https://i.imgur.com/wtbEs0G.png"/>
   <ul>
     <li>winrm Quickconfig</li>
@@ -160,7 +160,7 @@ https://techgiovanni1.imgur.com/all
 </p> 
 
 <p align="center">
-  <p>Ref 29: Rename Net Adapter Name</p>
+  <p>Ref 30: Rename Net Adapter Name</p>
   <img src="https://i.imgur.com/rQxMlxQ.png"/>
   <img src="https://i.imgur.com/d5mP42q.png"/>
    <ul>
@@ -178,7 +178,7 @@ https://techgiovanni1.imgur.com/all
 </p>
 
 <p align="center">
-  <p>Ref 30: Setting up default routes for unknown destinations for LAN 1 and LAN 6</p>
+  <p>Ref 31: Setting up default routes for unknown destinations for LAN 1 and LAN 6</p>
   <img src="https://i.imgur.com/uctHQJe.png"/>
   <img src="https://i.imgur.com/uctHQJe.png"/>
    <ul>
@@ -199,19 +199,19 @@ https://techgiovanni1.imgur.com/all
 
 # Install The Remote Access (Routing) Roles and Feature on the LANR1-4-6
 <p align="center">
-  <p>Ref 31: Add roles and Features to setup this Core server as a router</p>
+  <p>Ref 32: Add roles and Features to setup this Core server as a router</p>
   <img src="https://i.imgur.com/3KStiYR.png"/>
-  <p>Ref 32: Choose The Role for "Routing"</p>
+  <p>Ref 33: Choose The Role for "Routing"</p>
   <img src="https://i.imgur.com/UuF8qJ6.png"/>
 
 # Add the Administration Roles and Features to WDS01 Mangement Server
-  <p>Ref 33: Add Remote management tools to the WDS01 Management and Deployment Server</p>
+  <p>Ref 34: Add Remote management tools to the WDS01 Management and Deployment Server</p>
   <img src="https://i.imgur.com/KhHxexz.png"/>
 
 # Access and Finish Setting up The Remote Access (Routing) Roles and Feature on the LANR1-4-6
-  <p>Ref 34: Setup routing on the LANR1-4-6 Server. Choose "Custom Configuration" and then "LAN Routing"</p>
+  <p>Ref 35: Setup routing on the LANR1-4-6 Server. Choose "Custom Configuration" and then "LAN Routing"</p>
   <img src="https://i.imgur.com/eAah4hk.png"/>
-  <p>Ref 35: Setup Static Routes, So packets can get through the router and onto the other side</p>
+  <p>Ref 36: Setup Static Routes, So packets can get through the router and onto the other side</p>
   <img src="https://i.imgur.com/fDBw9wb.png"/>
 </p>
 
@@ -220,18 +220,18 @@ https://techgiovanni1.imgur.com/all
 ### Setup this up the same way as Pfsense-FW3 
 
 <p align="center">
-  <p>Ref 36: Create an Alias of IP Addresses</p> 
+  <p>Ref 37: Create an Alias of IP Addresses</p> 
   <img src="https://i.imgur.com/iJOa2Mk.png"/>
 </p>
 
 <p align="center">
-  <p>Ref 37: Created the Alias "Internal Network"</p> 
+  <p>Ref 38: Created the Alias "Internal Network"</p> 
   <img src="https://i.imgur.com/OFEMUfZ.png"/>
   <p>This allows communication from internam network</p>
 </p>
 
 <p align="center">
-  <p>Ref 38: Allow TCP, UDP and ICMP</p> 
+  <p>Ref 39: Allow TCP, UDP and ICMP</p> 
   <img src="https://i.imgur.com/pR7yhha.png"/>
   <p>Allow TCP and UDP to enter the WAN interface from any source and any destination</p>
   <p>Allow ICMP from only the internal networks</p>
@@ -242,48 +242,48 @@ https://techgiovanni1.imgur.com/all
 # Cisco Router CSR1000v
 ### Setup Cisco Router - IP Addresses, Passwords, usernames, SSH, ACLs
 <p align="center">
-  <p>Ref 39: Setup the IP Addresses for (GigabitEthernet1) LAN1 and (GigabitEthernet2) LAN 5 Interfaces on the Router</p> 
+  <p>Ref 40: Setup the IP Addresses for (GigabitEthernet1) LAN1 and (GigabitEthernet2) LAN 5 Interfaces on the Router</p> 
   <img src="https://i.imgur.com/9UsbIUx.png"/>
   <p></p>
 </p>
 
 <p align="center">
-  <p>Ref 40: Setup Passwords for enable mode</p>
+  <p>Ref 41: Setup Passwords for enable mode</p>
   <img src="https://i.imgur.com/IVVKL3w.png"/>
   <p>Also encrypt the plain text passwords on running-config using "service password-encryption"</p>
 </p>
 
 <p align="center">
-  <p>Ref 41: Setup Line VTY (Virtual Teletype) </p>
+  <p>Ref 42: Setup Line VTY (Virtual Teletype) </p>
   <img src="https://i.imgur.com/3lkZmqD.png"/>
   <p></p>
 </p>
 
 <p align="center">
-  <p>Ref 42: Created usernames and passwords</p>
+  <p>Ref 43: Created usernames and passwords</p>
   <img src="https://i.imgur.com/eQuUaji.png"/>
   <p> for those users using the password policy for string passwords and over 20 characters and only allow username and password to login</p>
 </p>
 
 <p align="center">
-  <p>Ref 43: Setup SSH on the Router</p>
+  <p>Ref 44: Setup SSH on the Router</p>
   <img src="https://i.imgur.com/09DQ8ep.png"/>
   <p>SSH allows for encryted traffic in both directions for confidentiality</p>
 </p>
 
 <p align="center">
-  <p>Ref 44: Setup Static Routes</p>
+  <p>Ref 45: Setup Static Routes</p>
   <img src="https://i.imgur.com/52QHTjL.png"/>
   <p>Allows for communication with the other Networks in our infrastructure.</p>
 </p>
 
 <p align="center">
-  <p>Ref 45: Cisco Routing table with A Static Route for unknown destinations "Last Resort"</p>
+  <p>Ref 46: Cisco Routing table with A Static Route for unknown destinations "Last Resort"</p>
   <img src="https://i.imgur.com/FXIZFq6.png"/>
 </p>
 
 <p align="center">
-  <p>Ref 46: Setup ACLs</p>
+  <p>Ref 47: Setup ACLs</p>
   <img src="https://i.imgur.com/b2NRtpo.png"/>
   <p> This was setup for the furture in case of malicious IP on the network that needs to be blocked. To mitigate risk.</p>
 </p>
@@ -293,44 +293,44 @@ https://techgiovanni1.imgur.com/all
 
 
 <p align="center">
-  <p>Ref 47: Pfsense copyright Acceptance to accept</p>
+  <p>Ref 48: Pfsense copyright Acceptance to accept</p>
   <img src="https://i.imgur.com/Flk62PP.png"/>
-  <p>Ref 48: Installation of Pfsense</p>
+  <p>Ref 49: Installation of Pfsense</p>
   <img src="https://i.imgur.com/QTOKHDh.png"/>
 </p>
 
 <p align="center">
-  <p>Ref 48: Choose Manual Disk Setup (experts) </p>
+  <p>Ref 50: Choose Manual Disk Setup (experts) </p>
   <img src="https://i.imgur.com/OnTuIOV.png"/>
   <p>This method is the only one that works so far while using Pfsense.</p>
 </p>
 
 
 <p align="center">
-  <p>Ref 48: Auto Disk setup</p>
+  <p>Ref 51: Auto Disk setup</p>
   <img src="https://i.imgur.com/ogc87Fx.png"/>
   <p>This created three partitions (da0p1 da0p2, da0p3)</p>
 </p>
 
 <p align="center">
-  <p>Ref 48: Commit these changes</p>
+  <p>Ref 52: Commit these changes</p>
   <img src="https://i.imgur.com/Qa66xrZ.png"/>
   <p></p>
 </p>
 
 <p align="center">
-  <p>Ref 48: Extracting the files and installing them on the disk.</p>
+  <p>Ref 53: Extracting the files and installing them on the disk.</p>
   <img src="https://i.imgur.com/izkp3AJ.png"/>
 </p>
 
 <p align="center">
-  <p>Ref 48: Installation of Pfsense is Complete</p>
+  <p>Ref 54: Installation of Pfsense is Complete</p>
   <img src="blob:https://imgur.com/8be6885e-692d-4b64-85a2-74abafdfd8ce"/>
   <p>After the installation is complete we will go to the shell.</p>
 </p>
 
 <p align="center">
-  <p>Ref 48: Halt Pfsense</p>
+  <p>Ref 55: Halt Pfsense</p>
   <img src="https://i.imgur.com/CCX6Z3l.png"/>
   <p>We need some tiem to remove the ISO before Pfsense Reboots, Otherwise we will get the screen to Install Pfsense again.</p>
   <p>Eject the Pfsense ISO disk at this time.</p>
@@ -338,19 +338,19 @@ https://techgiovanni1.imgur.com/all
 </p>
 
 <p align="center">
-  <p>Ref 48: Pfsense Initial Screen after reboot</p>
+  <p>Ref 56: Pfsense Initial Screen after reboot</p>
   <img src="https://i.imgur.com/t2yOlUV.png"/>
   <p>Only the default LAN ip address is setup. We will change this to our internal IP Addresses.</p>
 </p>
 
 <p align="center">
-  <p>Ref 48: WAN interface IP Address setup</p>
+  <p>Ref 57: WAN interface IP Address setup</p>
   <img src="https://i.imgur.com/GbtZ4Yg.png"/>
   <p>This is pointing to the internet</p>
 </p>
 
 <p align="center">
-  <p>Ref 48: Setup the LAN and WAN Ip Addresses</p>
+  <p>Ref 58: Setup the LAN and WAN Ip Addresses</p>
   <img src="https://i.imgur.com/5W4GMNx.png"/>
   <p>Now we will have access to the Pfsense web interface from within the LAN network that is directly connected</p>
 </p>
@@ -358,7 +358,7 @@ https://techgiovanni1.imgur.com/all
 
 # Create a Windows Desktop Virtual Machine to finish configuring the PFsense-FW2
 <p align="center">
-  <p>Ref 48: </p>
+  <p>Ref 59: </p>
   <img src="https://i.imgur.com/JD55gaF.png"/>
   <p>The configuration process will be the same as Pfsense-FW2 expect for the IPS/IDS system</p>
   <p>Then we will setup Active Directory, DHCP,DNS and WINS Server. then add a redundant DC02 controller for Availability purposes.</p>
@@ -366,74 +366,74 @@ https://techgiovanni1.imgur.com/all
 
 ## PFsense-FW2 WAN interface Rule Update
 <p align="center">
-  <p>Ref 48: Updating the Firewall TCP Alias to include Active directory ports on the LAN</p>
+  <p>Ref 60: Updating the Firewall TCP Alias to include Active directory ports on the LAN</p>
   <img src="https://i.imgur.com/Ep2UM28.png"/>
   <p>Updating the Firewall rule to allow Active Directory Services Inbound on TCP ports on the WAN interface</p>
 </p>
 
 <p align="center">
-  <p>Ref 48: Updating the Firewall UDP Alias to include Active directory ports on the LAN</p>
+  <p>Ref 61: Updating the Firewall UDP Alias to include Active directory ports on the LAN</p>
   <img src="https://i.imgur.com/o19qfEz.png"/>
   <p>Updating the Firewall rule to allow Active Directory Services Inbound on TCP ports on the WAN interface</p>
 </p>
 
 <p align="center">
-  <p>Ref 48: Created the Randomly allocated port used by Active Directory to use inside of TCP_Standard_Outbound</p>
+  <p>Ref 62: Created the Randomly allocated port used by Active Directory to use inside of TCP_Standard_Outbound</p>
   <img src="https://i.imgur.com/PvTqcKu.png"/>
 </p>
 
 ## dfvf
 <p align="center">
-  <p>Ref 48: </p>
+  <p>Ref 63: </p>
   <img src=""/>
   <p></p>
 </p>
 
 ## dfvf
 <p align="center">
-  <p>Ref 48: </p>
+  <p>Ref 64: </p>
   <img src=""/>
   <p></p>
 </p>
 
 ## dfvf
 <p align="center">
-  <p>Ref 48: </p>
+  <p>Ref 65: </p>
   <img src=""/>
   <p></p>
 </p>
 
 ## dfvf
 <p align="center">
-  <p>Ref 48: </p>
+  <p>Ref 66: </p>
   <img src=""/>
   <p></p>
 </p>
 
 ## dfvf
 <p align="center">
-  <p>Ref 48: </p>
+  <p>Ref 67: </p>
   <img src=""/>
   <p></p>
 </p>
 
 ## dfvf
 <p align="center">
-  <p>Ref 48: </p>
+  <p>Ref 68: </p>
   <img src=""/>
   <p></p>
 </p>
 
 ## dfvf
 <p align="center">
-  <p>Ref 48: </p>
+  <p>Ref 69: </p>
   <img src=""/>
   <p></p>
 </p>
 
 ## dfvf
 <p align="center">
-  <p>Ref 48: </p>
+  <p>Ref 70: </p>
   <img src=""/>
   <p></p>
 </p>
