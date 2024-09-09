@@ -1,4 +1,4 @@
-# Real-World-Network-Architecture-and-Cyber-Security-Lab
+# Network-Architecture-and-Cyber-Security-Lab
 
 ## Objective
 
