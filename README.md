@@ -382,6 +382,32 @@ https://techgiovanni1.imgur.com/all
   <img src="https://i.imgur.com/PvTqcKu.png"/>
 </p>
 
+The use of both a main firewall connected to the internet and an internal firewall within a network serves to enhance security through multiple layers of protection. Here’s a breakdown of their roles:
+
+Main Firewall (Perimeter Firewall):
+
+Purpose: Acts as the first line of defense between the external world (the internet) and your internal network.
+Functions:
+Traffic Filtering: Monitors and controls incoming and outgoing traffic based on predefined security rules, allowing or blocking traffic based on IP addresses, ports, and protocols.
+Attack Prevention: Protects against external threats such as DDoS attacks, malware, and unauthorized access attempts.
+VPN Termination: Often handles VPN connections for remote users or branch offices.
+Network Address Translation (NAT): Hides internal IP addresses from external entities and translates them into public addresses.
+Internal Firewall (Internal or Layer 2/3 Firewall):
+
+Purpose: Provides additional security within the internal network, protecting different segments or departments from each other.
+Functions:
+Segmenting the Network: Divides the network into segments (e.g., by department, sensitivity level, or function) to limit the spread of threats within the network.
+Access Control: Enforces policies for traffic between different internal segments, ensuring that only authorized users and devices can communicate across boundaries.
+Monitoring and Logging: Tracks internal network activity and detects unusual patterns or potential threats that might not be visible to the perimeter firewall.
+Threat Containment: Helps in isolating compromised systems or preventing lateral movement by attackers within the network.
+Benefits of This Dual Firewall Approach:
+
+Defense in Depth: By having multiple layers of security, you reduce the risk of a single point of failure. Even if an attacker bypasses the perimeter firewall, the internal firewall can still offer protection.
+Granular Control: Internal firewalls allow for more precise control of traffic between different segments of your network, which is useful for implementing strict security policies and minimizing risks.
+Reduced Impact of Breaches: In the event of a security breach, internal firewalls can limit the scope of damage by preventing attackers from easily moving within the network.
+Compliance and Best Practices: Many regulatory frameworks and security best practices recommend or require the use of multiple layers of firewalls and network segmentation.
+In summary, the main firewall secures the boundary between the external internet and your internal network, while the internal firewall enhances security within the network, providing additional control and segmentation. This layered approach helps in building a more resilient and secure network infrastructure.
+
 # Active Directory Domain Services
 <p align="center">
   <p>Ref 63: DC01 IP Address configuration </p>
