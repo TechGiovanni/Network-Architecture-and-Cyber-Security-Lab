@@ -790,34 +790,32 @@ In summary, the main firewall secures the boundary between the external internet
   <img src="https://i.imgur.com/vOXgH9S.png"/>
   <p>Instructing SPlunk Forwarders to push Events relating to "Application", "Security", "System" and "Sysmon"</p>
   <p>This will be in the Endpoint index</p>
-  <p>
-   <p>
-[WinEventLog://Application]
-index = endpoint
-disabled = false
+<p>
+<p>[WinEventLog://Application]</p>
+<p>index = endpoint</p>
+<p>disabled = false</p>
 </p> 
 
 <p>
-[WinEventLog://Security]
-index = endpoint
-disabled = false
+<p>[WinEventLog://Security]</p>
+<p>index = endpoint</p>
+<p>disabled = false</p>
 </p>
 
 <p>
-[WinEventLog://System]
-index = endpoint
-disabled = false
+<p>[WinEventLog://System]</p>
+<p>index = endpoint</p>
+<p>disabled = false</p>
 </p>
 
 <p>
-[WinEventLog://Microsoft-Windows-Sysmon/Operational]
-index = endpoint
-disabled = false
-renderXml = true
-source = XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
+<p>[WinEventLog://Microsoft-Windows-Sysmon/Operational]</p>
+<p>index = endpoint</p>
+<p>disabled = false</p>
+<p>renderXml = true</p>
+<p>source = XmlWinEventLog:Microsoft-Windows-Sysmon/Operational</p>
 </p>
 
-</p>
 <p>** "Remember to Save"  **</p>
 </p>
 
