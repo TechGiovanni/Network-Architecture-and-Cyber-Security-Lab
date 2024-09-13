@@ -860,17 +860,19 @@ In summary, the main firewall secures the boundary between the external internet
   <img src="https://i.imgur.com/wSB15o0.png"/>
 </p>
 
-
+Sysmon and Splunk Universal Forwarder Running and pushing logs
 <p align="center">
-  <p>Ref 116: </p>
-  <img src=""/>
-  <p></p>
+  <p>Ref 116: Both services are running</p>
+  <img src="https://i.imgur.com/w7QDkEF.png"/>
 </p>
 
+# Splunk Server 
+### Now its time to see our VM logs
 <p align="center">
-  <p>Ref 117: </p>
-  <img src=""/>
-  <p></p>
+  <p>Ref 117: Log into the Soc Analyst Splunk Server</p>
+  <img src="https://i.imgur.com/zPWWlY1.png"/>
+  <p>Remember we've created the index "endpoint" earlier. Now all of the events are being sent over to that index</p>
+  <p>Click "Search"</p>
 </p>
 
 
