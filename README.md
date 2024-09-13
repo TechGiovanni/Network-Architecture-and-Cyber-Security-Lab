@@ -713,29 +713,27 @@ In summary, the main firewall secures the boundary between the external internet
 
 # Download Sysmon
 <p align="center">
-  <p>Ref 110: </p>
+  <p>Ref 110: Microsoft SysInternals website</p>
   <img src="https://i.imgur.com/L4kOYYj.png"/>
   <p>Sysmon: https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon</p>
 </p>
 
 # Download Sysmon Config File
 <p align="center">
-  <p>Ref 111: Select sysmonconfig.xml</p>
+  <p>Ref 111: Github - Select sysmonconfig.xml</p>
   <img src="https://i.imgur.com/KC4xRTF.png"/>
   <p></p>
 </p>
 
 <p align="center">
-  <p>Ref 112: </p>
+  <p>Ref 112: inside the file to see its contents</p>
   <img src="https://i.imgur.com/FbtfWm7.png"/>
 </p>
 
 
 <p align="center">
-  <p>Ref 113: </p>
+  <p>Ref 113: Select Raw</p>
   <img src="https://i.imgur.com/rVdUEYW.png"/>
-  <p>Sysmon Config: https://github.com/olafhartong/sysmon-modular</p>
-  <p>Sysmon Config Raw: https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/sysmonconfig.xml</p>
 </p>
 
 <p align="center">
@@ -745,23 +743,29 @@ In summary, the main firewall secures the boundary between the external internet
 </p>
 
 <p align="center">
-  <p>Ref 115: Save it as xml</p>
-  <img src="https://i.imgur.com/Z8YMvTT.png"/>
-  <p></p>
+  <p>Ref 115: Save it as xml and "Extract all"</p>
+  <img src="https://i.imgur.com/b8dzCtn.png"/>
+  <p>Sysmon Config: https://github.com/olafhartong/sysmon-modular</p>
+  <p>Sysmon Config Raw: https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/sysmonconfig.xml</p>
 </p>
 
-
+## Installing Sysmon
 <p align="center">
-  <p>Ref 116: </p>
-  <img src="https://i.imgur.com/Wmu4U79.png"/>
-  <p>Extract All of sysmon contents</p>
+  <p>Ref 116: Copy the address</p>
+  <img src="https://i.imgur.com/BowVGfT.png"/>
   <p>Copy the Address for later on on Powershell</p>
+  <p>cd C:\Users\Administrator.GIOVANNI\Downloads\Sysmon</p>
+  <p>.\Sysmon64.exe -i ..\sysmonconfig.xml </p>
+   <p>NOw this will install Sysmon for you once you Select "Agree"</p>
+   <p></p>
+   <p></p>
+   <p></p>
 </p>
 
 <p align="center">
   <p>Ref 117: </p>
-  <img src=""/>
-  <p></p>
+  <img src="https://i.imgur.com/ZI4ryFp.png"/>
+  <p>Installing Sysmon and Specifying a configuration file </p>
 </p>
 
 
