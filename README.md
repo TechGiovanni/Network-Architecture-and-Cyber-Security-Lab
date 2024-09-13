@@ -562,12 +562,27 @@ In summary, the main firewall secures the boundary between the external internet
   <p>Ref 87: Added a mapped drive to the DC01 and DC02 secret shared Folders
 \\DC01.giovanni.cspec\C$</p>
   <img src="https://i.imgur.com/DTPGjDg.png"/>
+</p>
+
+
+# Installing Splunk Enterprise
+### This is used to monitor the computer logs and investigate suspicious activities.
+<p align="center">
+  <p>Ref 88: Download the Splunk Enterprise Free trial from their website</p>
+  <img src="https://i.imgur.com/831EIiq.png"/>
+  <p>Splunk: https://www.splunk.com/en_us/download/splunk-enterprise.html</p>
+</p>
+
+
+<p align="center">
+  <p>Ref 89: </p>
+  <img src=""/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 88: </p>
+  <p>Ref 90: </p>
   <img src=""/>
   <p></p>
 </p>
@@ -585,6 +600,185 @@ In summary, the main firewall secures the boundary between the external internet
   <img src=""/>
   <p></p>
 </p>
+
+<p align="center">
+  <p>Ref 89: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 90: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+<p align="center">
+  <p>Ref 89: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 90: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+<p align="center">
+  <p>Ref 89: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 90: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 90: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+<p align="center">
+  <p>Ref 89: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 90: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+<p align="center">
+  <p>Ref 89: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 90: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+
+
+<p align="center">
+  <p>Ref 90: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+<p align="center">
+  <p>Ref 89: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 90: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+<p align="center">
+  <p>Ref 89: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 90: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 90: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+<p align="center">
+  <p>Ref 89: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 90: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+<p align="center">
+  <p>Ref 89: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 90: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+
+
+
+<p align="center">
+  <p>Ref 90: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+<p align="center">
+  <p>Ref 89: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 90: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+<p align="center">
+  <p>Ref 89: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 90: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+
 
 
 
