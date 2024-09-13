@@ -565,7 +565,8 @@ In summary, the main firewall secures the boundary between the external internet
 </p>
 
 
-# Installing Splunk Enterprise
+
+# SOC Analyst PC - Installing Splunk Enterprise
 ### This is used to monitor the computer logs and investigate suspicious activities.
 <p align="center">
   <p>Ref 88: Download the Splunk Enterprise Free trial from their website</p>
@@ -575,113 +576,109 @@ In summary, the main firewall secures the boundary between the external internet
 
 
 <p align="center">
-  <p>Ref 89: </p>
-  <img src=""/>
+  <p>Ref 89: Splunk downloaded and installed on the SOC Analyst COmputer on LAN 2</p>
+  <img src="https://i.imgur.com/MBd6FEJ.png"/>
+</p>
+
+
+<p align="center">
+  <p>Ref 90: Setop the Receiving Port of 9997</p>
+  <img src="https://i.imgur.com/5c78aEu.png"/>
+  <p>This allows for computers to send logs to this computer using their port of 8089 and we will receive it on port 9997</p>
+</p>
+
+
+<p align="center">
+  <p>Ref 91: Settup port 9997 for recieving Logs</p>
+  <img src="https://i.imgur.com/COU6J0c.png"/>
+  <p></p>
+</p>
+
+# Adding Index
+<p align="center">
+  <p>Ref 92: Lets create an index to store our logs</p>
+  <img src="https://i.imgur.com/98ISH5h.png"/>
+  <p>This is like a bucket for logs</p>
+</p>
+
+<p align="center">
+  <p>Ref 93: We will collect our windows</p>
+  <img src="https://i.imgur.com/98ISH5h.png"/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 90: </p>
-  <img src=""/>
+  <p>Ref 94: Create an index called endpoint</p>
+  <img src="https://i.imgur.com/JJqOWBA.png"/>
+  <p></p>
+</p>
+
+<p align="center">
+  <p>Ref 95: the "endpoint" index was successfully created</p>
+  <img src="https://i.imgur.com/iFqpcd7.png"/>
+  <p></p>
+</p>
+
+
+## Open Advanced Firewall Configuration to allow Splunk in and out of the network
+<p align="center">
+  <p>Ref 96: Create a "New Rule" and Select Program</p>
+  <img src="https://i.imgur.com/fTnvESC.png"/>
+  <p>This should be done on both the Splunk Server and the Client VMs, so logs are not denied or dropped</p>
+</p>
+
+<p align="center">
+  <p>Ref 97: Locate Splunk within Program Files </p>
+  <img src="https://i.imgur.com/IL56K0U.png"/>
+</p>
+
+
+<p align="center">
+  <p>Ref 98: Choose Splunk</p>
+  <img src="https://i.imgur.com/pKlhIoo.png"/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 89: </p>
-  <img src=""/>
+  <p>Ref 99: Select the Bin (Binary) Folder</p>
+  <img src="https://i.imgur.com/hoKzEpl.png"/>
+  <p>this is where the executable files live</p>
+</p>
+
+<p align="center">
+  <p>Ref 100: Choose "Splunkd.exe" </p>
+  <img src="https://i.imgur.com/I7ixGP2.png"/>
+</p>
+
+
+<p align="center">
+  <p>Ref 90: Confirmation that its this program</p>
+  <img src="https://i.imgur.com/V6sbHdo.png"/>
+</p>
+
+<p align="center">
+  <p>Ref 89: Allow the Connection</p>
+  <img src="https://i.imgur.com/MwhqyVs.png"/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 90: </p>
-  <img src=""/>
+  <p>Ref 90: Apply to all Profiles</p>
+  <img src="https://i.imgur.com/XIO8It7.png"/>
   <p></p>
 </p>
 
 <p align="center">
-  <p>Ref 89: </p>
-  <img src=""/>
-  <p></p>
+  <p>Ref 90: Give it a Name "Splunkd Allow Inbound"</p>
+  <img src="https://i.imgur.com/KUnF02P.png"/>
+  <p>For Splunk ports to allow, You can Allow additionally Port 8089</p>
 </p>
 
 
-<p align="center">
-  <p>Ref 90: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-<p align="center">
-  <p>Ref 89: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-
-<p align="center">
-  <p>Ref 90: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-<p align="center">
-  <p>Ref 89: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-
-<p align="center">
-  <p>Ref 90: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-
-<p align="center">
-  <p>Ref 90: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-<p align="center">
-  <p>Ref 89: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-
-<p align="center">
-  <p>Ref 90: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-<p align="center">
-  <p>Ref 89: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-
-<p align="center">
-  <p>Ref 90: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-
-
-
-<p align="center">
-  <p>Ref 90: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
+# Setup Splunk Universal Forwarders 
 <p align="center">
   <p>Ref 89: </p>
   <img src=""/>
