@@ -457,7 +457,7 @@ In summary, the main firewall secures the boundary between the external internet
   <p></p>
 </p>
 
-## DC01 Setup WIns Server
+## DC01 Setup WINS Server (Windows Internet Name Service)
 <p align="center">
   <p>Ref 72: WINS Server setup</p>
   <img src="https://i.imgur.com/Mxu44Tw.png"/>
@@ -477,14 +477,12 @@ In summary, the main firewall secures the boundary between the external internet
   <p>Installed Active Directory Domain Srevices and DNS Roles at the same times.</p>
 </p>
 
-## dfvf
 <p align="center">
   <p>Ref 75: DC02 will replicate resources from DC01</p>
   <img src="https://i.imgur.com/zekf4Xx.png"/>
   <p></p>
 </p>
 
-## dfvf
 <p align="center">
   <p>Ref 76: Update the forwarders</p>
   <img src="https://i.imgur.com/QdkPSUQ.png"/>
@@ -505,7 +503,7 @@ In summary, the main firewall secures the boundary between the external internet
 
 
 <p align="center">
-  <p>Ref 79: Recored names of connected compueters</p>
+  <p>Ref 79: Recored names of connected computers</p>
   <img src="https://i.imgur.com/EC6u97g.png"/>
   <p></p>
 </p>
@@ -513,28 +511,80 @@ In summary, the main firewall secures the boundary between the external internet
 
 
 <p align="center">
-  <p>Ref 80: </p>
-  <img src=""/>
-  <p></p>
+  <p>Ref 80: Active Registrations then click find now - this will be replicated between DC01 and DC02</p>
+  <img src="https://i.imgur.com/X1M65TX.png"/>
 </p>
-
-
-
-Setup Firewall for LAN 6-3 (Check)
-Set-up DC01 (DHCP,WINS,DNS) (Check)
-Set-up DC02 (DHCP,WINS,DNS) (Check)
-Join the domain (Check)
-Seup Splunk on SOC Analyst PC
-Setup VPN
-Setup Firewall IDS/IPS on Pfsense-FW1 (S)
 
 
 <p align="center">
-  <p>Ref 48: </p>
+  <p>Ref 81: Showing that we successfully setup two domain controllers for avalability purposes</p>
+  <img src="https://i.imgur.com/Wc6D2SG.png"/>
+  <p></p>
+</p>
+
+## DHCP Final Setup
+<p align="center">
+  <p>Ref 82: Splitting the Scopes of DC01 so that it is a shared resoponsibility between DC01 and DC02 50/50</p>
+  <img src="https://i.imgur.com/nKNfs7o.png"/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 83: Setting the Percentage split to 50/50 </p>
+  <img src="https://i.imgur.com/C4mIdLD.png"/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 84: After the Scopes are Split on DC01 DHCP Server - We need to activate all the scopes on DC02 DHCP Server to have Redundant DHCP</p>
+  <img src="blob:https://imgur.com/48d54769-11d6-4e24-ab5f-91e074c38669"/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 85: DC02 - Restart the DHCP service and now our scopes are split and activated</p>
+  <img src="https://i.imgur.com/9CBx7ha.png"/>
+  <p>The Green check shows it is running and Activated</p>
+</p>
+
+# LANR1-4-6
+<p align="center">
+  <p>Ref 86: Make sure the DHCP Relay Agent now has our DC01 and DC02 ip addresses so that if computers need to get IP configurations, The router will send ttheir request to those Servers.</p>
+  <img src="https://i.imgur.com/qvRpXn5.png"/>
+  <p></p>
+</p>
+
+## WDS01 Server - GUI
+<p align="center">
+  <p>Ref 87: Added a mapped drive to the DC01 and DC02 secret shared Folders
+\\DC01.giovanni.cspec\C$</p>
+  <img src="https://i.imgur.com/DTPGjDg.png"/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 88: </p>
   <img src=""/>
   <p></p>
 </p>
 
+
+<p align="center">
+  <p>Ref 89: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 90: </p>
+  <img src=""/>
+  <p></p>
+</p>
 
 
 
