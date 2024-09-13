@@ -675,7 +675,7 @@ In summary, the main firewall secures the boundary between the external internet
 ### We will collect our windows logs from PC04 on LAN 3
 <p align="center">
   <p>Ref 104: Download SPlunk Universal Forwarder</p>
-  <img src="https://i.imgur.com/lH97fqo.png"/>
+  <img src="https://i.imgur.com/VPYMNX8.png"/>
   <p>Splunk Universal Forwarder: https://www.splunk.com/en_us/download/universal-forwarder.html</p>
 </p>
 
@@ -688,91 +688,384 @@ In summary, the main firewall secures the boundary between the external internet
 <p align="center">
   <p>Ref 106: Run the Setup</p>
   <img src="https://i.imgur.com/slGo5H9.png"/>
+  <p>Then Click "Next"</p>
 </p>
 
 <p align="center">
-  <p>Ref 107: Click Next</p>
-  <img src=""/>
-  <p></p>
-</p>
-
-
-<p align="center">
-  <p>Ref 108: </p>
-  <img src=""/>
-  <p></p>
+  <p>Ref 107: Add username and Password</p>
+  <img src="https://i.imgur.com/mnscRmz.png"/>
+  <p>Leave the Generate Random Password checked</p>
 </p>
 
 
 <p align="center">
-  <p>Ref 109: </p>
-  <img src=""/>
-  <p></p>
+  <p>Ref 108: Set the Deployment Server to IP Address of the SOC Analyst computer</p>
+  <img src="https://i.imgur.com/exvhBwX.png"/>
+  <p>We did not setup a deployment server, But we can Put it for in the future we want to create one.</p>
 </p>
 
+
+<p align="center">
+  <p>Ref 109: Set the Receiving Indexer</p>
+  <img src="https://i.imgur.com/8NFwDUZ.png"/>
+  <p>This is also going to be our Splunk Server</p>
+</p>
+
+# Download Sysmon
 <p align="center">
   <p>Ref 110: </p>
-  <img src=""/>
-  <p></p>
+  <img src="https://i.imgur.com/L4kOYYj.png"/>
+  <p>Sysmon: https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon</p>
 </p>
 
-
+# Download Sysmon Config File
 <p align="center">
-  <p>Ref 111: </p>
-  <img src=""/>
+  <p>Ref 111: Select sysmonconfig.xml</p>
+  <img src="https://i.imgur.com/KC4xRTF.png"/>
   <p></p>
 </p>
 
 <p align="center">
   <p>Ref 112: </p>
-  <img src=""/>
-  <p></p>
+  <img src="https://i.imgur.com/FbtfWm7.png"/>
 </p>
 
 
 <p align="center">
   <p>Ref 113: </p>
-  <img src=""/>
-  <p></p>
+  <img src="https://i.imgur.com/rVdUEYW.png"/>
+  <p>Sysmon Config: https://github.com/olafhartong/sysmon-modular</p>
+  <p>Sysmon Config Raw: https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/sysmonconfig.xml</p>
 </p>
 
-
-
-
-
 <p align="center">
-  <p>Ref 90: </p>
-  <img src=""/>
+  <p>Ref 114: Right click and Save as</p>
+  <img src="https://i.imgur.com/6vGFemJ.png"/>
   <p></p>
 </p>
 
 <p align="center">
-  <p>Ref 89: </p>
-  <img src=""/>
+  <p>Ref 115: Save it as xml</p>
+  <img src="https://i.imgur.com/Z8YMvTT.png"/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 90: </p>
-  <img src=""/>
-  <p></p>
+  <p>Ref 116: </p>
+  <img src="https://i.imgur.com/Wmu4U79.png"/>
+  <p>Extract All of sysmon contents</p>
+  <p>Copy the Address for later on on Powershell</p>
 </p>
 
 <p align="center">
-  <p>Ref 89: </p>
+  <p>Ref 117: </p>
   <img src=""/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 90: </p>
+  <p>Ref 118: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+<p align="center">
+  <p>Ref 115: </p>
   <img src=""/>
   <p></p>
 </p>
 
 
+<p align="center">
+  <p>Ref 116: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+<p align="center">
+  <p>Ref 117: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 118: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 115: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 116: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+<p align="center">
+  <p>Ref 117: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 118: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 115: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 116: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+<p align="center">
+  <p>Ref 117: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 118: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 115: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 116: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+<p align="center">
+  <p>Ref 117: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 118: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 115: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 116: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+<p align="center">
+  <p>Ref 117: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 118: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 115: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 116: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+<p align="center">
+  <p>Ref 117: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 118: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 115: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 116: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+<p align="center">
+  <p>Ref 117: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 118: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 115: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 116: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+<p align="center">
+  <p>Ref 117: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 118: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 115: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 116: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+<p align="center">
+  <p>Ref 117: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 118: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 115: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 116: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+<p align="center">
+  <p>Ref 117: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 118: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 115: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 116: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+<p align="center">
+  <p>Ref 117: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 118: </p>
+  <img src=""/>
+  <p></p>
+</p>
 
 
 
