@@ -602,20 +602,13 @@ In summary, the main firewall secures the boundary between the external internet
 </p>
 
 <p align="center">
-  <p>Ref 93: We will collect our windows</p>
-  <img src="https://i.imgur.com/98ISH5h.png"/>
-  <p></p>
-</p>
-
-
-<p align="center">
-  <p>Ref 94: Create an index called endpoint</p>
+  <p>Ref 93: Create an index called endpoint</p>
   <img src="https://i.imgur.com/JJqOWBA.png"/>
   <p></p>
 </p>
 
 <p align="center">
-  <p>Ref 95: the "endpoint" index was successfully created</p>
+  <p>Ref 94: the "endpoint" index was successfully created</p>
   <img src="https://i.imgur.com/iFqpcd7.png"/>
   <p></p>
 </p>
@@ -623,72 +616,78 @@ In summary, the main firewall secures the boundary between the external internet
 
 ## Open Advanced Firewall Configuration to allow Splunk in and out of the network
 <p align="center">
-  <p>Ref 96: Create a "New Rule" and Select Program</p>
+  <p>Ref 95: Create a "New Rule" and Select Program</p>
   <img src="https://i.imgur.com/fTnvESC.png"/>
   <p>This should be done on both the Splunk Server and the Client VMs, so logs are not denied or dropped</p>
 </p>
 
 <p align="center">
-  <p>Ref 97: Locate Splunk within Program Files </p>
+  <p>Ref 96: Locate Splunk within Program Files </p>
   <img src="https://i.imgur.com/IL56K0U.png"/>
 </p>
 
 
 <p align="center">
-  <p>Ref 98: Choose Splunk</p>
+  <p>Ref 97: Choose Splunk</p>
   <img src="https://i.imgur.com/pKlhIoo.png"/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 99: Select the Bin (Binary) Folder</p>
+  <p>Ref 98: Select the Bin (Binary) Folder</p>
   <img src="https://i.imgur.com/hoKzEpl.png"/>
   <p>this is where the executable files live</p>
 </p>
 
 <p align="center">
-  <p>Ref 100: Choose "Splunkd.exe" </p>
+  <p>Ref 99: Choose "Splunkd.exe" </p>
   <img src="https://i.imgur.com/I7ixGP2.png"/>
 </p>
 
 
 <p align="center">
-  <p>Ref 90: Confirmation that its this program</p>
+  <p>Ref 100: Confirmation that its this program</p>
   <img src="https://i.imgur.com/V6sbHdo.png"/>
 </p>
 
 <p align="center">
-  <p>Ref 89: Allow the Connection</p>
+  <p>Ref 101: Allow the Connection</p>
   <img src="https://i.imgur.com/MwhqyVs.png"/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 90: Apply to all Profiles</p>
+  <p>Ref 102: Apply to all Profiles</p>
   <img src="https://i.imgur.com/XIO8It7.png"/>
   <p></p>
 </p>
 
 <p align="center">
-  <p>Ref 90: Give it a Name "Splunkd Allow Inbound"</p>
+  <p>Ref 103: Give it a Name "Splunkd Allow Inbound"</p>
   <img src="https://i.imgur.com/KUnF02P.png"/>
   <p>For Splunk ports to allow, You can Allow additionally Port 8089</p>
 </p>
 
 
 # Setup Splunk Universal Forwarders 
+### We will collect our windows logs from PC04 on LAN 3
 <p align="center">
-  <p>Ref 89: </p>
-  <img src=""/>
+  <p>Ref 104: Download SPlunk Universal Forwarder</p>
+  <img src="https://i.imgur.com/lH97fqo.png"/>
   <p></p>
 </p>
 
+<p align="center">
+  <p>Ref 93: </p>
+  <img src="https://i.imgur.com/98ISH5h.png"/>
+  <p></p>
+</p>
 
 <p align="center">
   <p>Ref 90: </p>
-  <img src=""/>
+  <img src="https://i.imgur.com/L5TjD12.png"/>
   <p></p>
 </p>
 
