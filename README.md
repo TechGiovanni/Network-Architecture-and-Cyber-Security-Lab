@@ -877,35 +877,35 @@ Sysmon and Splunk Universal Forwarder Running and pushing logs
 
 
 <p align="center">
-  <p>Ref 118: </p>
-  <img src=""/>
+  <p>Ref 118: Setting Add Data</p>
+  <img src="https://i.imgur.com/jDvL8jU.png"/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 115: </p>
-  <img src=""/>
+  <p>Ref 115: Select forwarders</p>
+  <img src="https://i.imgur.com/y0emeBW.png"/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 116: </p>
-  <img src=""/>
+  <p>Ref 116: Our Computers are here</p>
+  <img src="https://i.imgur.com/hObDW2v.png"/>
   <p></p>
 </p>
 
 <p align="center">
-  <p>Ref 117: </p>
-  <img src=""/>
+  <p>Ref 117: Out PC4 is Pushing Events to our SOC Analyst Splunk Enterprise Server</p>
+  <img src="https://i.imgur.com/x1ohpT6.png"/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 118: </p>
-  <img src=""/>
+  <p>Ref 118: Enable Forward Monitoring</p>
+  <img src="https://i.imgur.com/b7PEkaQ.png"/>
   <p></p>
 </p>
 
