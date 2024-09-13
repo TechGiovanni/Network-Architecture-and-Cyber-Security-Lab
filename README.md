@@ -36,7 +36,7 @@ https://techgiovanni1.imgur.com/all
 ## Steps
 <p align="center">
   <p>Ref 1: Network Diagram</p>
-  <img src="https://i.imgur.com/IMgwPno.png"/>
+  <img src="https://i.imgur.com/e3v7EnX.png"/>
   <p>Ref 2: Hyper-V Manager - Hosting all of the Virtual Machines used in this Project</p>
   <img src="https://i.imgur.com/PImBLSe.png"/>
 </p>
