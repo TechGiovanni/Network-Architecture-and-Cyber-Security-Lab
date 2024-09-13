@@ -53,7 +53,7 @@ https://techgiovanni1.imgur.com/all
 
 -
 
-# Setup Pfsense-FW3 to get Internet Access on the Internal LAN
+# Setup Pfsense-FW1 to get Internet Access on the Internal LAN
 <p align="center">
   <p>Ref 4: Pfsense Firewall IP address setup</p>
   <img src="https://i.imgur.com/DlwV84Y.png"/>
@@ -63,7 +63,7 @@ https://techgiovanni1.imgur.com/all
 
 - 
 
-## Pfsense-FW3 Initial Configurations Web Interface
+## Pfsense-FW1 Initial Configurations Web Interface
 <p align="center">
   <p>Ref 5: Pfsense Web Interface on HTTP</p> 
   <img src="https://i.imgur.com/ChTG5rB.png"/>
@@ -79,7 +79,7 @@ https://techgiovanni1.imgur.com/all
 
 - 
 
-## Pfsense-FW3 Setting up TCP & UDP Aliases and Firewall Rules to be able to access the internet on the LAN interface
+## Pfsense-FW1 Setting up TCP & UDP Aliases and Firewall Rules to be able to access the internet on the LAN interface
 <p align="center">
   <p>Ref 10: Creating a TCP group of Ports called an Alias to use for convenience instead of having single Port rules.</p>
   <img src="https://i.imgur.com/j6KCKA0.png"/>
@@ -215,75 +215,51 @@ https://techgiovanni1.imgur.com/all
   <img src="https://i.imgur.com/fDBw9wb.png"/>
 </p>
 
-
-# Setup PFsense-FW1
-### Setup this up the same way as Pfsense-FW3 
-
-<p align="center">
-  <p>Ref 37: Create an Alias of IP Addresses</p> 
-  <img src="https://i.imgur.com/iJOa2Mk.png"/>
-</p>
-
-<p align="center">
-  <p>Ref 38: Created the Alias "Internal Network"</p> 
-  <img src="https://i.imgur.com/OFEMUfZ.png"/>
-  <p>This allows communication from internam network</p>
-</p>
-
-<p align="center">
-  <p>Ref 39: Allow TCP, UDP and ICMP</p> 
-  <img src="https://i.imgur.com/pR7yhha.png"/>
-  <p>Allow TCP and UDP to enter the WAN interface from any source and any destination</p>
-  <p>Allow ICMP from only the internal networks</p>
-</p>
-
-
-
 # Cisco Router CSR1000v
 ### Setup Cisco Router - IP Addresses, Passwords, usernames, SSH, ACLs
 <p align="center">
-  <p>Ref 40: Setup the IP Addresses for (GigabitEthernet1) LAN1 and (GigabitEthernet2) LAN 5 Interfaces on the Router</p> 
+  <p>Ref 37: Setup the IP Addresses for (GigabitEthernet1) LAN1 and (GigabitEthernet2) LAN 5 Interfaces on the Router</p> 
   <img src="https://i.imgur.com/9UsbIUx.png"/>
   <p></p>
 </p>
 
 <p align="center">
-  <p>Ref 41: Setup Passwords for enable mode</p>
+  <p>Ref 38: Setup Passwords for enable mode</p>
   <img src="https://i.imgur.com/IVVKL3w.png"/>
   <p>Also encrypt the plain text passwords on running-config using "service password-encryption"</p>
 </p>
 
 <p align="center">
-  <p>Ref 42: Setup Line VTY (Virtual Teletype) </p>
+  <p>Ref 39: Setup Line VTY (Virtual Teletype) </p>
   <img src="https://i.imgur.com/3lkZmqD.png"/>
   <p></p>
 </p>
 
 <p align="center">
-  <p>Ref 43: Created usernames and passwords</p>
+  <p>Ref 40: Created usernames and passwords</p>
   <img src="https://i.imgur.com/eQuUaji.png"/>
   <p> for those users using the password policy for string passwords and over 20 characters and only allow username and password to login</p>
 </p>
 
 <p align="center">
-  <p>Ref 44: Setup SSH on the Router</p>
+  <p>Ref 41: Setup SSH on the Router</p>
   <img src="https://i.imgur.com/09DQ8ep.png"/>
   <p>SSH allows for encryted traffic in both directions for confidentiality</p>
 </p>
 
 <p align="center">
-  <p>Ref 45: Setup Static Routes</p>
+  <p>Ref 42: Setup Static Routes</p>
   <img src="https://i.imgur.com/52QHTjL.png"/>
   <p>Allows for communication with the other Networks in our infrastructure.</p>
 </p>
 
 <p align="center">
-  <p>Ref 46: Cisco Routing table with A Static Route for unknown destinations "Last Resort"</p>
+  <p>Ref 43: Cisco Routing table with A Static Route for unknown destinations "Last Resort"</p>
   <img src="https://i.imgur.com/FXIZFq6.png"/>
 </p>
 
 <p align="center">
-  <p>Ref 47: Setup ACLs</p>
+  <p>Ref 44: Setup ACLs</p>
   <img src="https://i.imgur.com/b2NRtpo.png"/>
   <p> This was setup for the furture in case of malicious IP on the network that needs to be blocked. To mitigate risk.</p>
 </p>
@@ -293,44 +269,44 @@ https://techgiovanni1.imgur.com/all
 
 
 <p align="center">
-  <p>Ref 48: Pfsense copyright Acceptance to accept</p>
+  <p>Ref 45: Pfsense copyright Acceptance to accept</p>
   <img src="https://i.imgur.com/Flk62PP.png"/>
-  <p>Ref 49: Installation of Pfsense</p>
+  <p>Ref 46: Installation of Pfsense</p>
   <img src="https://i.imgur.com/QTOKHDh.png"/>
 </p>
 
 <p align="center">
-  <p>Ref 50: Choose Manual Disk Setup (experts) </p>
+  <p>Ref 47: Choose Manual Disk Setup (experts) </p>
   <img src="https://i.imgur.com/OnTuIOV.png"/>
   <p>This method is the only one that works so far while using Pfsense.</p>
 </p>
 
 
 <p align="center">
-  <p>Ref 51: Auto Disk setup</p>
+  <p>Ref 48: Auto Disk setup</p>
   <img src="https://i.imgur.com/ogc87Fx.png"/>
   <p>This created three partitions (da0p1 da0p2, da0p3)</p>
 </p>
 
 <p align="center">
-  <p>Ref 52: Commit these changes</p>
+  <p>Ref 49: Commit these changes</p>
   <img src="https://i.imgur.com/Qa66xrZ.png"/>
   <p></p>
 </p>
 
 <p align="center">
-  <p>Ref 53: Extracting the files and installing them on the disk.</p>
+  <p>Ref 50: Extracting the files and installing them on the disk.</p>
   <img src="https://i.imgur.com/izkp3AJ.png"/>
 </p>
 
 <p align="center">
-  <p>Ref 54: Installation of Pfsense is Complete</p>
+  <p>Ref 51: Installation of Pfsense is Complete</p>
   <img src="blob:https://imgur.com/8be6885e-692d-4b64-85a2-74abafdfd8ce"/>
   <p>After the installation is complete we will go to the shell.</p>
 </p>
 
 <p align="center">
-  <p>Ref 55: Halt Pfsense</p>
+  <p>Ref 52: Halt Pfsense</p>
   <img src="https://i.imgur.com/CCX6Z3l.png"/>
   <p>We need some tiem to remove the ISO before Pfsense Reboots, Otherwise we will get the screen to Install Pfsense again.</p>
   <p>Eject the Pfsense ISO disk at this time.</p>
@@ -338,19 +314,19 @@ https://techgiovanni1.imgur.com/all
 </p>
 
 <p align="center">
-  <p>Ref 56: Pfsense Initial Screen after reboot</p>
+  <p>Ref 53: Pfsense Initial Screen after reboot</p>
   <img src="https://i.imgur.com/t2yOlUV.png"/>
   <p>Only the default LAN ip address is setup. We will change this to our internal IP Addresses.</p>
 </p>
 
 <p align="center">
-  <p>Ref 57: WAN interface IP Address setup</p>
+  <p>Ref 54: WAN interface IP Address setup</p>
   <img src="https://i.imgur.com/GbtZ4Yg.png"/>
   <p>This is pointing to the internet</p>
 </p>
 
 <p align="center">
-  <p>Ref 58: Setup the LAN and WAN Ip Addresses</p>
+  <p>Ref 55: Setup the LAN and WAN Ip Addresses</p>
   <img src="https://i.imgur.com/5W4GMNx.png"/>
   <p>Now we will have access to the Pfsense web interface from within the LAN network that is directly connected</p>
 </p>
@@ -358,7 +334,7 @@ https://techgiovanni1.imgur.com/all
 
 # Create a Windows Desktop Virtual Machine to finish configuring the PFsense-FW2
 <p align="center">
-  <p>Ref 59: </p>
+  <p>Ref 56: </p>
   <img src="https://i.imgur.com/JD55gaF.png"/>
   <p>The configuration process will be the same as Pfsense-FW2 expect for the IPS/IDS system</p>
   <p>Then we will setup Active Directory, DHCP,DNS and WINS Server. then add a redundant DC02 controller for Availability purposes.</p>
@@ -366,19 +342,19 @@ https://techgiovanni1.imgur.com/all
 
 ## PFsense-FW2 WAN interface Rule Update
 <p align="center">
-  <p>Ref 60: Updating the Firewall TCP Alias to include Active directory ports on the LAN</p>
+  <p>Ref 57: Updating the Firewall TCP Alias to include Active directory ports on the LAN</p>
   <img src="https://i.imgur.com/Ep2UM28.png"/>
   <p>Updating the Firewall rule to allow Active Directory Services Inbound on TCP ports on the WAN interface</p>
 </p>
 
 <p align="center">
-  <p>Ref 61: Updating the Firewall UDP Alias to include Active directory ports on the LAN</p>
+  <p>Ref 58: Updating the Firewall UDP Alias to include Active directory ports on the LAN</p>
   <img src="https://i.imgur.com/o19qfEz.png"/>
   <p>Updating the Firewall rule to allow Active Directory Services Inbound on TCP ports on the WAN interface</p>
 </p>
 
 <p align="center">
-  <p>Ref 62: Created the Randomly allocated port used by Active Directory to use inside of TCP_Standard_Outbound</p>
+  <p>Ref 59: Created the Randomly allocated port used by Active Directory to use inside of TCP_Standard_Outbound</p>
   <img src="https://i.imgur.com/PvTqcKu.png"/>
 </p>
 
@@ -410,126 +386,126 @@ In summary, the main firewall secures the boundary between the external internet
 
 # Active Directory Domain Services
 <p align="center">
-  <p>Ref 63: DC01 IP Address configuration </p>
+  <p>Ref 60: DC01 IP Address configuration </p>
   <img src="https://i.imgur.com/K80njvT.png"/>
 </p>
 
 <p align="center">
-  <p>Ref 64: DC01 remove ipv6 binding and allow remote management from the firewall</p>
+  <p>Ref 61: DC01 remove ipv6 binding and allow remote management from the firewall</p>
   <img src="https://i.imgur.com/YSCkv9i.png"/>
 </p>
 
 <p align="center">
-  <p>Ref 65: Added DC01 to Server Manager</p>
+  <p>Ref 62: Added DC01 to Server Manager</p>
   <img src="https://i.imgur.com/6ZNUMp5.png"/>
 </p>
 
 
 <p align="center">
-  <p>Ref 66: Install Active Directory DS  and DNS Roles</p>
+  <p>Ref 63: Install Active Directory DS  and DNS Roles</p>
   <img src="https://i.imgur.com/fa5C91p.png"/>
 </p>
 
 
 <p align="center">
-  <p>Ref 67: Created a new forest</p>
+  <p>Ref 64: Created a new forest</p>
   <img src="https://i.imgur.com/oPqWsit.png"/>
   <p>Promote ot Domain Controller</p>
 </p>
 
 
 <p align="center">
-  <p>Ref 68: Removing ipv6 and updating DNS</p>
+  <p>Ref 65: Removing ipv6 and updating DNS</p>
   <img src="https://i.imgur.com/4LvayDO.png"/>
   <p>After successful Installation of ADDS update the ip configuration removing ipv6 and updating DNS</p>
 </p>
 
 <p align="center">
-  <p>Ref 69: Join the Domain from the WDS01 VM</p>
+  <p>Ref 66: Join the Domain from the WDS01 VM</p>
   <img src="https://i.imgur.com/ibUkgC9.png"/>
 </p>
 
 
 ## DNS Configuration
 <p align="center">
-  <p>Ref 70: Setup DNS Server REverse Lookup Zones</p>
+  <p>Ref 67: Setup DNS Server REverse Lookup Zones</p>
   <img src="https://i.imgur.com/Mpbu533.png"/>
 </p>
 
 ## Install DHCP and WINS ROles and Features
 <p align="center">
-  <p>Ref 48: Added DHCP and WINS to DC02</p>
+  <p>Ref 68: Added DHCP and WINS to DC02</p>
   <img src="https://i.imgur.com/eRz3rrt.png"/>
 </p>
 
 ## DCHP Configuration 
 <p align="center">
-  <p>Ref 48: Adding DHCP Scopes for issuing IP Addresses and IP Configurations</p>
+  <p>Ref 69: Adding DHCP Scopes for issuing IP Addresses and IP Configurations</p>
   <img src="https://i.imgur.com/35jBbbS.png"/>
 </p>
 
 <p align="center">
-  <p>Ref 48: DC01 Added IP Address Ranges for all Subnets</p>
+  <p>Ref 70: DC01 Added IP Address Ranges for all Subnets</p>
   <img src="https://i.imgur.com/mzzNrEL.png"/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 48: Added the Domain namd and DNS Ip Addresses</p>
+  <p>Ref 71: Added the Domain namd and DNS Ip Addresses</p>
   <img src="https://i.imgur.com/Z9785cH.png"/>
   <p></p>
 </p>
 
 ## DC01 Setup WIns Server
 <p align="center">
-  <p>Ref 48: WINS Server setup</p>
+  <p>Ref 72: WINS Server setup</p>
   <img src="https://i.imgur.com/Mxu44Tw.png"/>
   <p></p>
 </p>
 
 # DC02 Redundant Domain Controller
 <p align="center">
-  <p>Ref 48: Added DC02 to Server Manager</p>
+  <p>Ref 73: Added DC02 to Server Manager</p>
   <img src="https://i.imgur.com/k6x3YQv.png"/>
   <p></p>
 </p>
 
 <p align="center">
-  <p>Ref 48: Promoting DC02 as a Domain Controller</p>
+  <p>Ref 74: Promoting DC02 as a Domain Controller</p>
   <img src="https://i.imgur.com/7PfMCZ1.png"/>
   <p>Installed Active Directory Domain Srevices and DNS Roles at the same times.</p>
 </p>
 
 ## dfvf
 <p align="center">
-  <p>Ref 48: DC02 will replicate resources from DC01</p>
+  <p>Ref 75: DC02 will replicate resources from DC01</p>
   <img src="https://i.imgur.com/zekf4Xx.png"/>
   <p></p>
 </p>
 
 ## dfvf
 <p align="center">
-  <p>Ref 48: Update the forwarders</p>
+  <p>Ref 76: Update the forwarders</p>
   <img src="https://i.imgur.com/QdkPSUQ.png"/>
 </p>
 
 <p align="center">
-  <p>Ref 48: DC02 DNS Zones were Replicated automatically from DC01</p>
+  <p>Ref 77: DC02 DNS Zones were Replicated automatically from DC01</p>
   <img src="https://i.imgur.com/aSaZ4Nj.png"/>
   <p></p>
 </p>
 
 ## WINS SERVER for DC02
 <p align="center">
-  <p>Ref 48: Replicate from DC01 for names and computers</p>
+  <p>Ref 78: Replicate from DC01 for names and computers</p>
   <img src="https://i.imgur.com/U2iUEIm.png"/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 48: Recored names of connected compueters</p>
+  <p>Ref 79: Recored names of connected compueters</p>
   <img src="https://i.imgur.com/EC6u97g.png"/>
   <p></p>
 </p>
@@ -537,7 +513,7 @@ In summary, the main firewall secures the boundary between the external internet
 
 
 <p align="center">
-  <p>Ref 48: </p>
+  <p>Ref 80: </p>
   <img src=""/>
   <p></p>
 </p>
