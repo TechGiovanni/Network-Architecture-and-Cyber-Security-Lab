@@ -790,6 +790,8 @@ In summary, the main firewall secures the boundary between the external internet
   <img src="https://i.imgur.com/vOXgH9S.png"/>
   <p>Instructing SPlunk Forwarders to push Events relating to "Application", "Security", "System" and "Sysmon"</p>
   <p>This will be in the Endpoint index</p>
+  <p>** "Remember to Save"  **</p>
+  
 <p>
 <p>[WinEventLog://Application]</p>
 <p>index = endpoint</p>
@@ -816,27 +818,46 @@ In summary, the main firewall secures the boundary between the external internet
 <p>source = XmlWinEventLog:Microsoft-Windows-Sysmon/Operational</p>
 </p>
 
-<p>** "Remember to Save"  **</p>
+</p>
+
+# Splunk Log on as
+<p align="center">
+  <p>Ref 118: Go to properties to change the Log on as Field</p>
+  <img src="https://i.imgur.com/7YaaLii.png"/>
+  <p></p>
 </p>
 
 <p align="center">
-  <p>Ref 117: </p>
-  <img src=""/>
+  <p>Ref 118: NT Service</p>
+  <img src="https://i.imgur.com/BwXpQ7O.png"/>
+  <p>with this login - Splunk might not be able to collect logs, due to some of the permissions</p>
+</p>
+
+<p align="center">
+  <p>Ref 117: Select "Local System Account" and then Select "Apply"</p>
+  <img src="https://i.imgur.com/9poAuqN.png"/>
+  <p>The new logon wont take into effect until we restart the Splunk Service</p>
+  <p>This is what we will do because we also updated our "inputs.conf" file</p>
+  
+  <p>Ref 117: Now the Splunk service will log on as "Local System". This is exactly what we want</p>
+  <img src="https://i.imgur.com/lo5GeA5.png"/>
   <p></p>
 </p>
 
 
+
+# Splunk Stop and Start
+
 <p align="center">
-  <p>Ref 118: </p>
-  <img src=""/>
-  <p></p>
+  <p>Ref 118: Stop the Splunk Service</p>
+  <img src="https://i.imgur.com/oUlYWJK.png"/>
+  <p>Restarting the Service seems to be getting an error. So Select Stop</p>
 </p>
 
 
 <p align="center">
-  <p>Ref 115: </p>
-  <img src=""/>
-  <p></p>
+  <p>Ref 115: Start the Splunk Service</p>
+  <img src="https://i.imgur.com/wSB15o0.png"/>
 </p>
 
 
