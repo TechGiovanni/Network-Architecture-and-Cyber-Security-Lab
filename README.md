@@ -762,10 +762,7 @@ In summary, the main firewall secures the boundary between the external internet
   <p>Installing Sysmon and Specifying a configuration file </p>
   <p>cd C:\Users\Administrator.GIOVANNI\Downloads\Sysmon</p>
   <p>.\Sysmon64.exe -i ..\sysmonconfig.xml </p>
-  <p>NOw this will install Sysmon for you once you Select "Agree"</p>
-  <p></p>
-  <p></p>
-  <p></p>
+  <p>Now this will install Sysmon for you once you Select "Agree"</p>
 </p>
 
 # Instruct the Splunk forwarder on what we want to send over to our Splunk Server "input.conf"
@@ -776,7 +773,7 @@ In summary, the main firewall secures the boundary between the external internet
 </p>
 
 <p align="center">
-  <p>Ref 115: input.conf</p>
+  <p>Ref 119: input.conf</p>
   <img src="https://i.imgur.com/TVH2r4C.png"/>
   <p>You could copy this file but we will create a new file</p>
   <p>Open "Notepad" with administrative privileges</p>
@@ -786,7 +783,7 @@ In summary, the main firewall secures the boundary between the external internet
 
 
 <p align="center">
-  <p>Ref 116: Save the File with the Events to forward configurations</p>
+  <p>Ref 120: Save the File with the Events to forward configurations</p>
   <img src="https://i.imgur.com/vOXgH9S.png"/>
   <p>Instructing SPlunk Forwarders to push Events relating to "Application", "Security", "System" and "Sysmon"</p>
   <p>This will be in the Endpoint index</p>
@@ -822,24 +819,24 @@ In summary, the main firewall secures the boundary between the external internet
 
 # Splunk Log on as
 <p align="center">
-  <p>Ref 118: Go to properties to change the Log on as Field</p>
+  <p>Ref 121: Go to properties to change the Log on as Field</p>
   <img src="https://i.imgur.com/7YaaLii.png"/>
   <p></p>
 </p>
 
 <p align="center">
-  <p>Ref 118: NT Service</p>
+  <p>Ref 122: NT Service</p>
   <img src="https://i.imgur.com/BwXpQ7O.png"/>
   <p>with this login - Splunk might not be able to collect logs, due to some of the permissions</p>
 </p>
 
 <p align="center">
-  <p>Ref 117: Select "Local System Account" and then Select "Apply"</p>
+  <p>Ref 123: Select "Local System Account" and then Select "Apply"</p>
   <img src="https://i.imgur.com/9poAuqN.png"/>
   <p>The new logon wont take into effect until we restart the Splunk Service</p>
   <p>This is what we will do because we also updated our "inputs.conf" file</p>
   
-  <p>Ref 117: Now the Splunk service will log on as "Local System". This is exactly what we want</p>
+  <p>Ref 124: Now the Splunk service will log on as "Local System". This is exactly what we want</p>
   <img src="https://i.imgur.com/lo5GeA5.png"/>
   <p></p>
 </p>
@@ -849,119 +846,106 @@ In summary, the main firewall secures the boundary between the external internet
 # Splunk Stop and Start
 
 <p align="center">
-  <p>Ref 118: Stop the Splunk Service</p>
+  <p>Ref 125: Stop the Splunk Service</p>
   <img src="https://i.imgur.com/oUlYWJK.png"/>
   <p>Restarting the Service seems to be getting an error. So Select Stop</p>
 </p>
 
 
 <p align="center">
-  <p>Ref 115: Start the Splunk Service</p>
+  <p>Ref 126: Start the Splunk Service</p>
   <img src="https://i.imgur.com/wSB15o0.png"/>
 </p>
 
 Sysmon and Splunk Universal Forwarder Running and pushing logs
 <p align="center">
-  <p>Ref 116: Both services are running</p>
+  <p>Ref 127: Both services are running</p>
   <img src="https://i.imgur.com/w7QDkEF.png"/>
 </p>
 
 # Splunk Server 
 ### Now its time to see our VM logs
 <p align="center">
-  <p>Ref 117: Log into the Soc Analyst Splunk Server</p>
+  <p>Ref 128: Log into the Soc Analyst Splunk Server</p>
   <img src="https://i.imgur.com/zPWWlY1.png"/>
   <p>Remember we've created the index "endpoint" earlier. Now all of the events are being sent over to that index</p>
   <p>Click "Search"</p>
 </p>
 
+<p align="center">
+  <p>Ref 129: Out PC4 is Pushing Events to our SOC Analyst Splunk Enterprise Server</p>
+  <img src="https://i.imgur.com/x1ohpT6.png"/>
+  <p></p>
+</p>
 
 <p align="center">
-  <p>Ref 118: Setting Add Data</p>
+  <p>Ref 130: Setting Add Data</p>
   <img src="https://i.imgur.com/jDvL8jU.png"/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 115: Select forwarders</p>
+  <p>Ref 131: Select forwarders</p>
   <img src="https://i.imgur.com/y0emeBW.png"/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 116: Our Computers are here</p>
+  <p>Ref 132: Our Computers are here</p>
   <img src="https://i.imgur.com/hObDW2v.png"/>
   <p></p>
 </p>
 
-<p align="center">
-  <p>Ref 117: Out PC4 is Pushing Events to our SOC Analyst Splunk Enterprise Server</p>
-  <img src="https://i.imgur.com/x1ohpT6.png"/>
-  <p></p>
-</p>
-
 
 <p align="center">
-  <p>Ref 118: Enable Forward Monitoring</p>
+  <p>Ref 133: Enable Forward Monitoring</p>
   <img src="https://i.imgur.com/b7PEkaQ.png"/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 115: </p>
+  <p>Ref 134: </p>
   <img src=""/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 116: </p>
+  <p>Ref 135: </p>
   <img src=""/>
   <p></p>
 </p>
 
 <p align="center">
-  <p>Ref 117: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-
-<p align="center">
-  <p>Ref 118: </p>
+  <p>Ref 136: </p>
   <img src=""/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 115: </p>
+  <p>Ref 137: </p>
   <img src=""/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 116: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-<p align="center">
-  <p>Ref 117: </p>
+  <p>Ref 138: </p>
   <img src=""/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 118: </p>
+  <p>Ref 139: </p>
   <img src=""/>
   <p></p>
 </p>
+
 
 
 <p align="center">
