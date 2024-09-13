@@ -676,63 +676,62 @@ In summary, the main firewall secures the boundary between the external internet
 <p align="center">
   <p>Ref 104: Download SPlunk Universal Forwarder</p>
   <img src="https://i.imgur.com/lH97fqo.png"/>
-  <p></p>
+  <p>Splunk Universal Forwarder: https://www.splunk.com/en_us/download/universal-forwarder.html</p>
 </p>
 
 <p align="center">
-  <p>Ref 93: </p>
-  <img src="https://i.imgur.com/98ISH5h.png"/>
-  <p></p>
-</p>
-
-<p align="center">
-  <p>Ref 90: </p>
+  <p>Ref 105: The Download is complete on the PC4 Computer</p>
   <img src="https://i.imgur.com/L5TjD12.png"/>
   <p></p>
 </p>
 
 <p align="center">
-  <p>Ref 89: </p>
+  <p>Ref 106: Run the Setup</p>
+  <img src="https://i.imgur.com/slGo5H9.png"/>
+</p>
+
+<p align="center">
+  <p>Ref 107: Click Next</p>
   <img src=""/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 90: </p>
+  <p>Ref 108: </p>
   <img src=""/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 90: </p>
+  <p>Ref 109: </p>
   <img src=""/>
   <p></p>
 </p>
 
 <p align="center">
-  <p>Ref 89: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-
-<p align="center">
-  <p>Ref 90: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-<p align="center">
-  <p>Ref 89: </p>
+  <p>Ref 110: </p>
   <img src=""/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 90: </p>
+  <p>Ref 111: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+<p align="center">
+  <p>Ref 112: </p>
+  <img src=""/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 113: </p>
   <img src=""/>
   <p></p>
 </p>
