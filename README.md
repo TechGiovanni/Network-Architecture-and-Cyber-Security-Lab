@@ -754,38 +754,63 @@ In summary, the main firewall secures the boundary between the external internet
   <p>Ref 116: Copy the address</p>
   <img src="https://i.imgur.com/BowVGfT.png"/>
   <p>Copy the Address for later on on Powershell</p>
-  <p>cd C:\Users\Administrator.GIOVANNI\Downloads\Sysmon</p>
-  <p>.\Sysmon64.exe -i ..\sysmonconfig.xml </p>
-   <p>NOw this will install Sysmon for you once you Select "Agree"</p>
-   <p></p>
-   <p></p>
-   <p></p>
 </p>
 
 <p align="center">
   <p>Ref 117: </p>
   <img src="https://i.imgur.com/ZI4ryFp.png"/>
   <p>Installing Sysmon and Specifying a configuration file </p>
+  <p>cd C:\Users\Administrator.GIOVANNI\Downloads\Sysmon</p>
+  <p>.\Sysmon64.exe -i ..\sysmonconfig.xml </p>
+  <p>NOw this will install Sysmon for you once you Select "Agree"</p>
+  <p></p>
+  <p></p>
+  <p></p>
+</p>
+
+# Instruct the Splunk forwarder on what we want to send over to our Splunk Server "input.conf"
+<p align="center">
+  <p>Ref 118: where to find the input.conf file</p>
+  <img src="https://i.imgur.com/OkFEEup.png"/>
+  <p>** DO NOT EDIT the "input.conf" File under Defaults</p>
+</p>
+
+<p align="center">
+  <p>Ref 115: input.conf</p>
+  <img src="https://i.imgur.com/TVH2r4C.png"/>
+  <p>You could copy this file but we will create a new file</p>
+  <p>Open "Notepad" with administrative privileges</p>
+  <p>Save the file as "input.conf"</p>
+  
 </p>
 
 
 <p align="center">
-  <p>Ref 118: </p>
-  <img src=""/>
-  <p></p>
+  <p>Ref 116: Save the File with the Events to forward configurations</p>
+  <img src="https://i.imgur.com/vOXgH9S.png"/>
+  <p>Instructing SPlunk Forwarders to push Events relating to "Application", "Security", "System" and "Sysmon"</p>
+  <p>This will be in the Endpoint index</p>
+  <p>
+[WinEventLog://Application]
+index = endpoint
+disabled = false
+
+[WinEventLog://Security]
+index = endpoint
+disabled = false
+
+[WinEventLog://System]
+index = endpoint
+disabled = false
+
+[WinEventLog://Microsoft-Windows-Sysmon/Operational]
+index = endpoint
+disabled = false
+renderXml = true
+
+source = XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
 </p>
-
-<p align="center">
-  <p>Ref 115: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-
-<p align="center">
-  <p>Ref 116: </p>
-  <img src=""/>
-  <p></p>
+<p>** "Remember to Save"  **</p>
 </p>
 
 <p align="center">
