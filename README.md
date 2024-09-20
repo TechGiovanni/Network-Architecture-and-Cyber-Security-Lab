@@ -997,62 +997,62 @@ Sysmon and Splunk Universal Forwarder Running and pushing logs
 
 
 <p align="center">
-  <p>Ref 147: </p>
+  <p>Ref 147:  Create WAN Interface and Settings - Part 3 - Save the Settings</p>
   <img src="https://i.imgur.com/nHX7sgo.png"/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 115: </p>
-  <img src=""/>
+  <p>Ref 148: Create WAN Interface and Catagories</p>
+  <img src="https://i.imgur.com/ZirdER4.png"/>
+  <p> Then Save the Settings</p>
+</p>
+
+
+<p align="center">
+  <p>Ref 149: Start suricata for on the WAN Interface</p>
+  <img src="https://i.imgur.com/Oo4OsnE.png"/>
+  <p></p>
+</p>
+
+<p align="center">
+  <p>Ref 150: Create LAN Interface and Settings</p>
+  <img src="https://i.imgur.com/wgBt8hn.png"/>
+  <p>Create LAN interface - Use the Same settings except do not check "Block offenders"</p>
+</p>
+
+
+<p align="center">
+  <p>Ref 151: Create LAN Interface and Catagories</p>
+  <img src="https://i.imgur.com/HCy3glU.png"/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 116: </p>
-  <img src=""/>
+  <p>Ref 115: Start suricata for on the LAN Interface</p>
+  <img src="https://i.imgur.com/4YQ0cXe.png"/>
   <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 116: To verify that Suricata is working, </p>
+  <img src=""/>
+  <p>Notice that I was actually on my WDS01 to configure everything so far, But Now I am on the PC4 as the WDS01 HTTP was Blocked by Suricata</p>
 </p>
 
 <p align="center">
   <p>Ref 117: </p>
-  <img src=""/>
+  <img src="https://i.imgur.com/axLyhuX.png"/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 118: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-
-<p align="center">
-  <p>Ref 115: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-
-<p align="center">
-  <p>Ref 116: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-<p align="center">
-  <p>Ref 117: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-
-<p align="center">
-  <p>Ref 118: </p>
-  <img src=""/>
+  <p>Ref 118: To take someone off the Block list - Click the x button</p>
+  <img src="https://i.imgur.com/AVdsaUw.png"/>
   <p></p>
 </p>
 
