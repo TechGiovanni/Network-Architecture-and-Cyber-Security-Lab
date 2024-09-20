@@ -1,4 +1,5 @@
 # Network-Architecture-and-Cyber-Security-Lab
+<img src="https://i.imgur.com/nMYKxIN.png"/>
 
 ## Objective
 
