@@ -1039,77 +1039,14 @@ Sysmon and Splunk Universal Forwarder Running and pushing logs
 
 <p align="center">
   <p>Ref 116: To verify that Suricata is working, </p>
-  <img src=""/>
+  <img src="https://i.imgur.com/axLyhuX.png"/>
   <p>Notice that I was actually on my WDS01 to configure everything so far, But Now I am on the PC4 as the WDS01 HTTP was Blocked by Suricata</p>
 </p>
-
-<p align="center">
-  <p>Ref 117: </p>
-  <img src="https://i.imgur.com/axLyhuX.png"/>
-  <p></p>
-</p>
-
 
 <p align="center">
   <p>Ref 118: To take someone off the Block list - Click the x button</p>
   <img src="https://i.imgur.com/AVdsaUw.png"/>
   <p></p>
 </p>
-
-
-<p align="center">
-  <p>Ref 115: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-
-<p align="center">
-  <p>Ref 116: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-<p align="center">
-  <p>Ref 117: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-
-<p align="center">
-  <p>Ref 118: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-
-<p align="center">
-  <p>Ref 115: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-
-<p align="center">
-  <p>Ref 116: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-<p align="center">
-  <p>Ref 117: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-
-<p align="center">
-  <p>Ref 118: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-
 
 
