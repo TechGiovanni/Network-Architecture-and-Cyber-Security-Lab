@@ -30,9 +30,6 @@ This hands-on experience was designed to deepen understanding of network securit
 - Routing rules Blocking specific Ip Addresses.
 - Hyper-V Virtualization using Virtual Network Adapters to connect all Virtual Machines in this lab.
 
-### Resources
-https://techgiovanni1.imgur.com/all
-
 ## Steps
 <p align="center">
   <p>Ref 1: Network Diagram</p>
