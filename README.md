@@ -906,98 +906,99 @@ Sysmon and Splunk Universal Forwarder Running and pushing logs
 </p>
 
 # Installing Suricata
+
 <p align="center">
-  <p>Ref 134: </p>
-  <img src=""/>
+  <p>Ref 134: Installed suricata from the Package Manager page</p>
+  <img src="https://i.imgur.com/Vl61jgW.png"/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 135: </p>
-  <img src=""/>
+  <p>Ref 135: Suricata 7.0.6 installation complete</p>
+  <img src="https://i.imgur.com/mCbS0Io.png"/>
   <p></p>
 </p>
 
 <p align="center">
-  <p>Ref 136: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-
-<p align="center">
-  <p>Ref 137: </p>
-  <img src=""/>
+  <p>Ref 136: Setting up Suricata Global Settings Part 1</p>
+  <img src="https://i.imgur.com/aRNaf5v.png"/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 138: </p>
-  <img src=""/>
+  <p>Ref 137: Setting up Suricata Global Settings Part 2</p>
+  <img src="https://i.imgur.com/Gb6d0P9.png"/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 139: </p>
-  <img src=""/>
+  <p>Ref 138: Configure Suricata Global settings Part 3 - Create a Maxmind account</p>
+  <img src="https://i.imgur.com/gznz89E.png"/>
+  <p></p>
+</p>
+
+
+<p align="center">
+  <p>Ref 139: Configure Suricata Global settings Part 4 - Generate a new Maxmind license key</p>
+  <img src="https://i.imgur.com/Z9jC9wU.png"/>
   <p></p>
 </p>
 
 
 
 <p align="center">
-  <p>Ref 115: </p>
-  <img src=""/>
+  <p>Ref 140: Configure Suricata Global settings Part 5 - Confirm the Generation of new license key</p>
+  <img src="https://i.imgur.com/CBHLcIo.png"/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 116: </p>
-  <img src=""/>
+  <p>Ref 141: Configure Suricata Global settings Part 5 - Add the Maxmind License Key and Account ID to Suricata</p>
+  <img src="https://i.imgur.com/1eHMqsu.png"/>
   <p></p>
 </p>
 
 <p align="center">
-  <p>Ref 117: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-
-<p align="center">
-  <p>Ref 118: </p>
-  <img src=""/>
+  <p>Ref 142: Configure Suricata Global settings Part 5 - Save Global Setting</p>
+  <img src="https://i.imgur.com/QLeDOvP.png"/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 115: </p>
-  <img src=""/>
+  <p>Ref 143: Configure Suricata Global settings Part 5 </p>
+  <img src="https://i.imgur.com/Moig7aL.png"/>
+  <p>If you get errors, Uncheck this "Install snort rules" check box. This requires snort signup.</p>
+</p>
+
+
+<p align="center">
+  <p>Ref 144: Update Suricata</p>
+  <img src="https://i.imgur.com/jFhq6mw.png"/>
+  <p>Update Suricata rules to pull the signature data onto your instance of Suricata.</p>
+</p>
+
+
+<p align="center">
+  <p>Ref 145: Create WAN Interface and Settings</p>
+  <img src="https://i.imgur.com/vNQQwKs.png"/>
+  <p></p>
+</p>
+
+<p align="center">
+  <p>Ref 146: Create WAN Interface and Settings - Part 2</p>
+  <img src="https://i.imgur.com/1A2iqHf.png"/>
   <p></p>
 </p>
 
 
 <p align="center">
-  <p>Ref 116: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-<p align="center">
-  <p>Ref 117: </p>
-  <img src=""/>
-  <p></p>
-</p>
-
-
-<p align="center">
-  <p>Ref 118: </p>
-  <img src=""/>
+  <p>Ref 147: </p>
+  <img src="https://i.imgur.com/nHX7sgo.png"/>
   <p></p>
 </p>
 
