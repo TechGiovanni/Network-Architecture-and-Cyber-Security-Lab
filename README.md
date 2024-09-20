@@ -905,7 +905,7 @@ Sysmon and Splunk Universal Forwarder Running and pushing logs
   <p></p>
 </p>
 
-
+# Installing Suricata
 <p align="center">
   <p>Ref 134: </p>
   <img src=""/>
